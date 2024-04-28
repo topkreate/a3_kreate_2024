@@ -1,0 +1,1 @@
+<div class="fb-activity" data-site="https://www.facebook.com/DiwaliCelebrations" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>

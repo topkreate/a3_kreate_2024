@@ -1,0 +1,196 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage11.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/appblock/ad728.ascx" TagName="ad3" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad160.ascx" TagName="ad2" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/analytics.ascx" TagName="anal" TagPrefix="uc1_analytics" %>
+ <%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+ <%@ Register Src="articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Thanks Giving</title>
+    <link href="http://www.thanks-giving.net/style.css" rel="stylesheet" type="text/css" />
+    <meta name="google-site-verification" content="OZkMR8uRudQ4iuWxq_dUu3TGYE2btqmhlNB8yUycU8U" />
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18714837-31']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+
+</head>
+<body>
+    <center>
+        <!--main-div-->
+        <div id="main">
+            <!--logo-div-->
+            <div id="logo">
+                <div id="commonblockone">
+                    <img src="http://www.thanks-giving.net/images2/logo3.png" /></div>
+                <div id="commonblocktwo">
+                    <div id="link2">
+                        <ul>
+                            <li><a href="http://www.thanks-giving.net/Default.aspx">Home Page</a></li>
+                            <li><a href="http://www.thanks-giving.net/sale.aspx">Sale</a></li>
+                            <li><a href="http://www.thanks-giving.net/deals.aspx?category=TV">LCD</a></li>
+                            <li><a href="http://www.thanks-giving.net/mobile-phones.aspx">Mobile</a></li>
+                            <li><a href="http://www.thanks-giving.net/events-store.aspx?event=thanksgiving">All</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--logo-div-end-->
+            <!--header-div-->
+            <div id="header">
+                <div style="float: left; border: 0px red solid">
+                    <img src="http://www.thanks-giving.net/images2/header_imgleft.jpg" /></div>
+                <div style="float: left; width: 400px; padding-left: 20px;">
+                    <div style="height: 42px">
+                    </div>
+                    <div style="height: 97px; padding-left: 140px">
+                        <img src="http://www.thanks-giving.net/images2/caption.jpg" /></div>
+                    <div>
+                        <img src="http://www.thanks-giving.net/images2/product_one.jpg" /></div>
+                </div>
+                <!--<div id="headerright">
+				<div id="headercaption"><img src="images2/caption.jpg" /></div>
+				<div id="headerproduct" style="border:1px solid #fff;"><img src="images2/product_one.jpg" align="left"/></div>
+			</div>-->
+            </div>
+            <!--header-div-end-->
+            <!--div-two-->
+            <div style="width: 981px;">
+                <div id="container">
+                    <!--leftbar-->
+                    <div id="leftbar">
+                        
+                        
+                            <div id="subcategorylinks">
+                                <ul>
+                                    <strong>
+                                        <li><a href="http://www.thanks-giving.net/" style="color: Black">Thanks Giving</a></li> </store>
+                                        <li><a href="http://www.thanks-giving.net/store-open.aspx" title="Windows Mobile Features">Store Open</a></li>
+                                        <li><a href="http://www.thanks-giving.net/store.aspx?storename=Target" title="Target Offers">Target</a></li>
+                                        <li><a href="http://www.thanks-giving.net/store.aspx?storename=Walmart" title="Applications">Walmart</a></li>
+                                        <li><a href="http://www.thanks-giving.net/store.aspx?storename=Kohls" title="Kohls Black Friday offer">Kohls</a></li>
+                                        
+                                       <li><a href="http://www.thanks-giving.net/store.aspx?storename=BestBuy" title="Macy Thanks Giving offer">Macy</a></li>
+                                       <li><a href="http://www.thanks-giving.net/store.aspx?storename=Amazon" title="Amazon Thanks Giving offer">Amazon</a></li>
+                                        <br />
+                                        <li><a href="http://www.thanks-giving.net/phones.aspx" style="color: Black">Electronics</a></li>
+                                        <br />
+                                        <li><a href="http://www.thanks-giving.net/store.aspx?storename=Frys" style="color: Black">Frys</a></li>
+                                        <li><a href="http://www.thanks-giving.net/store.aspx?storename=BestBuy" title="HTC 8X">Best Buy</a></li>
+                                        <li><a href="http://www.thanks-giving.net/store.aspx?storename=RadioShack" title="Nokia 920">Radio Shack</a></li>
+                                        <li><a href="http://www.thanks-giving.net/store.aspx?storename=OfficeDepot" title="Nokia 820">Office Depot</a></li>
+                                        <br />
+                                        </ul>
+                                        <ul>
+                                            <strong>
+                                                <li><a href="http://www.thanks-giving.net/default.aspx" style="color: Black">Thanks Giving</a></li></strong>
+                                                <li><a href="http://www.thanks-giving.net/quotes1.aspx" target="_blank">Quotes</a></li>
+                                                <li><a href="http://www.thanks-giving.net/quotes2.aspx" target="_blank">More quotes</a></li>
+                                                <li><a href="http://www.thanks-giving.net/significance.aspx" target="_blank">Significance</a></li>
+                                                <li><a href="http://www.thanks-giving.net/10-turkey-dishes.aspx" target="_blank">10
+                                                    Turkey Dishes</a></li>
+                                                <li><a href="http://www.thanks-giving.net/why-thanks-giving-is-celebrated.aspx">Why
+                                                    celebrate </a></li>
+                                                <li><a href="http://www.thanks-giving.net/great-deals/" target="_blank" title="Buy">
+                                                    Great Deals</a></li>
+                                                    </ul>
+                                                <br />
+                                                <br />
+                                            <ul>
+
+                                                <ul>
+                                            <strong>
+                                                <li><a href="http://www.thanks-giving.net/Walmart/pictures.html" style="color: Black">Walmart Ad</a></li></strong>
+                                                <li><a href="http://www.thanks-giving.net/Microsoft/" >Microsoft</a></li>
+                                                <li><a href="http://www.thanks-giving.net/Frys/" >Frys</a></li>
+                                                <li><a href="http://www.thanks-giving.net/Kohls/" >Kohls</a></li>
+                                                <li><a href="http://www.thanks-giving.net/Macys/" >Macys</a></li>
+                                                <li><a href="http://www.thanks-giving.net/Office Depot/">Office Depot </a></li>
+                                                <li><a href="http://www.thanks-giving.net/Office Max/" >Office Max</a></li>
+                                                <li><a href="http://www.thanks-giving.net/Sears/" >Sears</a></li>
+                                                <li><a href="http://www.thanks-giving.net/Staples/">Staples </a></li>
+                                                <li><a href="http://www.thanks-giving.net/Target/" >Target</a></li>
+                                                      <li><a href="http://www.thanks-giving.net/Walgreens/" >Walgreens</a></li>
+                                                    </ul>
+                                                <br />
+                                                <br />
+                                            <ul>
+                        <uc1:articles ID="articles1" runat="server"></uc1:articles>
+                                </ul> 
+                                
+                                        
+                            </div>
+                        <div id="subcategorylinks2">
+                            <ul>
+                        <uc1:articleshome ID="articleshome" runat="server"></uc1:articleshome>
+                                </ul> 
+
+                               <ul>
+                                 <strong>
+                                                <li><a href="http://www.thanks-giving.net/holidays/" style="color: Black">US Holidays</a></li></strong>
+                                                <li><a href="http://www.thanks-giving.net/holidays/ThanksGiving/" >Thanks Giving Date</a></li>
+                                               
+                                                    </ul>
+                                                
+                            </div>
+                          
+                          <div>
+                            Ads
+                                                
+                                                
+                                                
+                        </div>
+                    </div>
+                    <div align="center">
+                                                    <uc1:ad2 ID="ad2" runat="server"></uc1:ad2>
+                                               </div>
+                    <!--leftbar-end-->
+                    <!--content-->
+                    <div id="content">
+                        <div style="width: 720px; height: 1400px">
+                             
+                            <p>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </p>
+                            <div align="center">
+                                <uc1:ad3 ID="ad3" runat="server"></uc1:ad3>
+                            </div>
+                            <br />
+                            <br />
+                            <div align="center">
+                                <uc1:ad3 ID="ad31" runat="server"></uc1:ad3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content-end-->
+                </div>
+            </div>
+            <!--div-two-end-->
+            <!--footer-div-->
+            <div style="width: 981px; background-color: #FFFFCC;">
+                <div id="footer">
+                    <div>
+                        <font class="footertext">Designed by &copy;
+                    </div>
+                </div>
+            </div>
+            <!--footer-div-end-->
+        </div>
+        <!--main-div-end-->
+    </center>
+</body>
+</html>

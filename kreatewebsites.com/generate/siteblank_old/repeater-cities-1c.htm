@@ -1,0 +1,36 @@
+﻿ <asp:Repeater ID="RepDetails" runat="server"   >
+
+<HeaderTemplate>
+
+
+</HeaderTemplate>
+
+<ItemTemplate>
+
+
+
+                                        
+										<h2>
+                                        
+                                          <asp:HyperLink ID="HyperLink1" runat="server" Text='<%#Eval("biz_name")%>' NavigateUrl='<%# DataBinder.Eval(Container.DataItem, "biz_name", "http://www.uscitytrip.net/attractions.aspx?name={0}") %>' /> 
+                                        </h2>
+										
+										
+								
+
+
+</ItemTemplate>
+
+
+
+<FooterTemplate>
+
+
+
+</FooterTemplate>
+
+</asp:Repeater>
+             
+ 
+ 
+ 

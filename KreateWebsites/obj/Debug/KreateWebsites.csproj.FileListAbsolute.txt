@@ -1,0 +1,11 @@
+C:\e\a1_sites\000-Kreate\KreateWebsites\bin\Debug\KreateWebsites.dll
+C:\e\a1_sites\000-Kreate\KreateWebsites\bin\Debug\KreateWebsites.pdb
+C:\e\a1_sites\000-Kreate\KreateWebsites\obj\Debug\KreateWebsites.dll
+C:\e\a1_sites\000-Kreate\KreateWebsites\obj\Debug\KreateWebsites.pdb
+C:\e\a1_sites\000-kreate\KreateWebsites\obj\Debug\KreateWebsites.csprojResolveAssemblyReference.cache
+C:\e\a3_kreate\KreateWebsites\bin\Debug\KreateWebsites.dll
+C:\e\a3_kreate\KreateWebsites\bin\Debug\KreateWebsites.pdb
+C:\e\a3_kreate\KreateWebsites\obj\Debug\KreateWebsites.dll
+C:\e\a3_kreate\KreateWebsites\obj\Debug\KreateWebsites.pdb
+C:\e\a3_kreate\KreateWebsites\obj\Debug\KreateWebsites.csproj.CoreCompileInputs.cache
+C:\e\a3_kreate\KreateWebsites\obj\Debug\KreateWebsites.csproj.AssemblyReference.cache

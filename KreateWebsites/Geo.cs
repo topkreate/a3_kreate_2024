@@ -1,0 +1,622 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+public static class Geo
+{
+    /// <summary>
+    /// Global variable storing important stuff.
+    /// </summary>
+    /// 
+
+   static string _list = " ";
+    public static string list
+    {
+        get
+        {
+            return _list;
+        }
+        set
+        {
+            _list = value;
+        }
+    }
+
+    static string _Continent = null;
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string Continent
+    {
+        get
+        {
+            return _Continent;
+        }
+        set
+        {
+            _Continent = value;
+        }
+    }
+
+    static string _Country = null;
+    public static string Country
+    {
+        get
+        {
+            return _Country;
+        }
+        set
+        {
+            _Country = value;
+        }
+    }
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    /// 
+
+    static string _Sitename ="Places to see";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string Sitename
+    {
+        get
+        {
+            return _Sitename;
+        }
+        set
+        {
+            _Sitename = value;
+        }
+    }
+
+
+    static string _Siteurl = @"http://places-to-see.net/";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string Siteurl
+    {
+        get
+        {
+            return _Siteurl;
+        }
+        set
+        {
+            _Siteurl = value;
+        }
+    }
+
+   
+ //   static string _slidepath = @"http://pictures.places-to-see.net/slide16/";
+    static string _slidepath = @"http://photos.places-to-see.net/banner/" ;
+    //  static string _imagepath = @"";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string SlidePath
+    {
+        get
+        {
+            return _slidepath;
+        }
+        set
+        {
+            _slidepath = value;
+        }
+    }
+
+    
+    static string _imagepath = @"http://photos.places-to-see.net/";
+
+  //  static string _imagepath = "";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string ImagePath
+    {
+        get
+        {
+            return _imagepath;
+        }
+        set
+        {
+            _imagepath = value;
+        }
+    }
+
+
+
+
+    static string _picpage = @"pictures";
+ 
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string picpage
+    {
+        get
+        {
+            return _picpage;
+        }
+        set
+        {
+            _picpage = value;
+        }
+    }
+
+    static string _thumbnailpath = @"thumbnails_300/";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string thumbnailpath
+    {
+        get
+        {
+            return _thumbnailpath;
+        }
+        set
+        {
+            _thumbnailpath = value;
+        }
+    }
+
+
+    static string _photopath = @"thumbnails_700/";
+  
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string photopath
+    {
+        get
+        {
+            return _photopath;
+        }
+        set
+        {
+            _photopath = value;
+        }
+    }
+
+    static string _Placename = null;
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string Placename
+    {
+        get
+        {
+            return _Placename;
+        }
+        set
+        {
+            _Placename = value;
+        }
+    }
+
+
+
+    static string _State = null;
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string State
+    {
+        get
+        {
+            return _State;
+        }
+        set
+        {
+            _State = value;
+        }
+    }
+
+    static string _StateName = null;
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string StateName
+    {
+        get
+        {
+            return _StateName;
+        }
+        set
+        {
+            _StateName = value;
+        }
+    }
+
+
+    static string _City = null;
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string City
+    {
+        get
+        {
+            return _City;
+        }
+        set
+        {
+            _City = value;
+        }
+    }
+    static string _Category = "Tourist";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string Category
+    {
+        get
+        {
+            return _Category;
+        }
+        set
+        {
+            _Category = value;
+        }
+    }
+
+
+    static string _SubCategory = null;
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string SubCategory
+    {
+        get
+        {
+            return _SubCategory;
+        }
+        set
+        {
+            _SubCategory = value;
+        }
+    }
+
+
+
+    static string _Featured = "Cook Island";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string Featured
+    {
+        get
+        {
+            return _Featured;
+        }
+        set
+        {
+            _Featured = value;
+        }
+    }
+static string _Keyword = "Cook Island";
+ public static string Keyword
+    {
+        get
+        {
+            return _Keyword;
+        }
+        set
+        {
+            _Keyword = value;
+        }
+    }
+
+   
+
+    
+ static string _datefolder = @"when is";
+ public static string Datefolder
+ {
+     get
+     {
+         return _datefolder;
+     }
+     set
+     {
+         _datefolder = value;
+     }
+ }
+
+ static string _datefolder2 = @"when is";
+ public static string Datefolder2
+ {
+     get
+     {
+         return _datefolder2;
+     }
+     set
+     {
+         _datefolder2 = value;
+     }
+ }
+
+ static string _slides = "slides";
+ public static string SlidesPage
+ {
+     get
+     {
+         return _slides;
+     }
+     set
+     {
+         _slides = value;
+     }
+ }
+ static string _gallery = "gallery";
+ public static string GalleryPage
+ {
+     get
+     {
+         return _gallery;
+     }
+     set
+     {
+         _gallery = value;
+     }
+ }
+
+ public static class Slides
+ {
+
+     static string _name = "Slides and Banners";
+     public static string name
+     {
+         get
+         {
+             return _name;
+         }
+         set
+         {
+             _name = value;
+         }
+     }
+     static string title = "Slides and Banner";
+     static string _url = "slides";
+     public static string url
+     {
+         get
+         {
+             return _url;
+         }
+         set
+         {
+             _url = value;
+         }
+     }
+     public static string sizepath = @"";
+     public static string thumbnailpath = @"thumbnails_175";
+     public static string defaultpath = @"http://photos.places-to-see.net/banner/";
+     public static bool slidegenerate = true;  // use to denote whether to put slides on page or not
+     public static bool picturegenerate = true;  // use to put whether to put pictures sections on page or not
+     public static bool individualpage = false;  // use to denote whether individual page should be generated for each slide or not
+     public static bool includepictures = false; //  If this is false it will use pictures.list and ignore individual pictures
+ }
+
+
+ public static class Pictures
+ {
+
+     static string _name = "Pictures";
+     public static string name
+     {
+         get
+         {
+             return _name;
+         }
+         set
+         {
+             _name = value;
+         }
+     }
+     static string title = "Pictures";
+     static string _url = "pictures";
+     public static string url
+     {
+         get
+         {
+             return _url;
+         }
+         set
+         {
+             _url = value;
+         }
+     }
+     public static string sizepath = @"thumbnails_500";
+     public static string thumbnailpath = @"thumbnails_500";
+     public static int width=500;
+     public static int height=0;
+     public static string defaultpath = @"http://photos.places-to-see.net/";
+     public static bool individualpage = true;  // use to denote whether individual page should be generated for each pictures or not
+     public static bool includepictures = false ; //  If this is false it will use pictures.list and ignore individual pictures
+
+ }
+
+
+ public static class Gallery
+ {
+
+     static string _name = "gallery";
+     public static string name
+     {
+         get
+         {
+             return _name;
+         }
+         set
+         {
+             _name = value;
+         }
+     }
+     static string title = "Gallery";
+     static string _url = "gallery";
+     public static string url
+     {
+         get
+         {
+             return _url;
+         }
+         set
+         {
+             _url = value;
+         }
+     }
+     public static string sizepath = @"";
+     public static string thumbnailpath = @"thumbnails_300";
+     public static string defaultpath = @"http://photos.places-to-see.net/";
+     public static bool individualpage = false;
+     public static string keyword = "Photos Gallery of" ;
+     public static bool includepictures = false; //  If this is false it will use pictures.list and ignore individual pictures
+ }
+}
+
+
+public static class Current
+{
+    /// <summary>
+    /// Global variable storing important stuff.
+    /// </summary>
+    /// 
+
+
+    static string _Name = "Places to see";
+    public static string Name
+    {
+        get
+        {
+            return _Name;
+        }
+        set
+        {
+            _Name = value;
+        }
+    }
+
+    static Int16 _Count = 5;
+    public static Int16 Count
+    {
+        get
+        {
+            return _Count;
+        }
+        set
+        {
+            _Count = value;
+        }
+    }
+
+    static string _Country = "India";
+    public static string Country
+    {
+        get
+        {
+            return _Country;
+        }
+        set
+        {
+            _Country = value;
+        }
+    }
+
+    
+    static string _Placename = "Qutubminar";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string Placename
+    {
+        get
+        {
+            return _Placename;
+        }
+        set
+        {
+            _Placename = value;
+        }
+    }
+
+
+
+    static string _State = "Delhi";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string State
+    {
+        get
+        {
+            return _State;
+        }
+        set
+        {
+            _State = value;
+        }
+    }
+
+    static string _StateName = "Delhi";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string StateName
+    {
+        get
+        {
+            return _StateName;
+        }
+        set
+        {
+            _StateName = value;
+        }
+    }
+
+
+    static string _City = "New Delhi";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string City
+    {
+        get
+        {
+            return _City;
+        }
+        set
+        {
+            _City = value;
+        }
+    }
+   
+
+
+
+
+
+
+}

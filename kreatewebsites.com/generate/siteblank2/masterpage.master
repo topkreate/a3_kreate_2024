@@ -1,0 +1,34 @@
+﻿
+
+<%@ Master Language="C#" AutoEventWireup="true" %>
+<%@ Register Src="~/generate/site1/header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site1/footer.ascx" TagName="footer" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_like_Script.ascx" TagName="facebook" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_display.ascx" TagName="facebookd" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_root.ascx" TagName="facebook_root" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head id="head1" runat="server">
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+	
+	</head>
+	<body>
+        <uc1:facebook_root ID="facebook_root" runat="server"></uc1:facebook_root>
+		<!-- Header -->
+
+			
+              <uc1:facebook ID="facebook" runat="server"></uc1:facebook>
+	<!-- ********************************************************* -->  
+      
+		
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+			
+       
+
+
+
+	</body>
+</html>

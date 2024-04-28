@@ -1,0 +1,54 @@
+﻿ <asp:Repeater ID="RepDetails" runat="server"   >
+
+<HeaderTemplate>
+
+
+</HeaderTemplate>
+
+<ItemTemplate>
+
+
+<div class="3u">
+							
+								<!-- Feature #1 -->
+									<section>
+                                        
+										<h2>
+                                        
+                                          <asp:HyperLink ID="HyperLink1" runat="server" Text='<%#Eval("city")%>' NavigateUrl='<%# DataBinder.Eval(Container.DataItem, "city", "http://www.uscitytrip.net/city.aspx?name={0}") %>' /> 
+                                        </h2>
+										
+										<p>
+										
+                                            <p> Attractions in <asp:Label ID="Label0" runat="server" Text='<%#Eval("city") %>'/> : <b><asp:Label ID="lbl3" runat="server" Text='<%#Eval("place2") %>'/>  ,
+<asp:Label ID="lbl4" runat="server" Text='<%#Eval("place1") %>'/> ,
+<asp:Label ID="lbl6" runat="server" Text='<%#Eval("place3") %>'/> </b>...
+                              
+											
+										</p>
+									</section>
+
+
+   
+
+		</div>
+
+ 
+
+
+
+</ItemTemplate>
+
+
+
+<FooterTemplate>
+
+
+
+</FooterTemplate>
+
+</asp:Repeater>
+             
+ 
+ 
+ 

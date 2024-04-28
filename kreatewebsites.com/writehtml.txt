@@ -1,0 +1,48 @@
+
+        public static void GenerateHTML(string inputurl, string outputurl)
+        {
+
+            try
+            {
+
+                if ((!File.Exists(outputurl)) || (overwrite))
+                {
+
+
+
+                    WebRequest req = WebRequest.Create(inputurl);
+                    WebResponse res = req.GetResponse();
+                    StreamReader sr = new StreamReader(res.GetResponseStream());
+                    string html = sr.ReadToEnd();
+
+                    writefile(html, outputurl);
+                }
+            }
+            catch (Exception e)
+            {
+                // Response.Write("Exception" +  e.Message);
+
+            }
+
+
+        }
+        public static void writefile(string html, string localpath)
+        {
+            // string localpath ;
+            // localpath = "f:\\" + siteurl + "\\" + path7 + "\\" + param + ".html";
+            //   localpath = "f:\\test\\" + param + ".html";
+            //  StreamWriter _testData = new StreamWriter("f:\\" + siteurl + "\\" + path7 + "\\" + param) ;
+            //   StreamWriter _testData = new StreamWriter("f:\\test\\data3.html", true);
+
+            //      Response.Write("<br/> Directory created : " + localpath);
+            Directory.CreateDirectory(Path.GetDirectoryName(localpath));
+
+            //     StreamWriter _testData = new StreamWriter(localpath, true);  // to append to existing file
+            StreamWriter _testData = new StreamWriter(localpath, false);  // to overwrite existing file
+            _testData.WriteLine(html); // Write the file.
+            _testData.Close(); // Close the instance of StreamWriter.
+            _testData.Dispose(); // Dispose from memory.       
+
+            //    Response.Write("<br/> File created : " + localpath   );
+
+        }

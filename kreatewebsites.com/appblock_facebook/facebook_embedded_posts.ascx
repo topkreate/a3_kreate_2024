@@ -1,0 +1,1 @@
+<div class="fb-post" data-href="https://www.facebook.com/DiwaliCelebrations" data-width="500"></div>

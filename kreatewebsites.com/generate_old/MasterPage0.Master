@@ -1,0 +1,388 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage0.Master.cs" Inherits="Inner" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Places to See</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <script src="https://www.kreatewebsites.com/Js1/jquery.js" type="text/javascript"></script>
+    <script src="https://www.kreatewebsites.com/Js1/superfish.js" type="text/javascript"></script>
+    <link href="https://www.kreatewebsites.com/Style/style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body id="home">
+      <div id="header-top" class="clearfix">
+		<div class="container clearfix">
+			<!-- Start Logo -->
+			<a href="">
+			<img src="https://www.kreatewebsites.com/logo/logo.jpg" alt="Logo" id="logo"/>
+			</a>
+			<p id="slogan">Places to see</p>
+			<!-- End Logo -->
+			
+			<!-- Start Page-menu -->
+			<div id="page-menu">
+				<div id="p-menu-left"> </div>
+				<div id="p-menu-content">
+				
+					<script type="text/javascript"><!--
+    google_ad_client = "ca-pub-9932751777437258";
+    /* 468x60, created 11/27/10 */
+    google_ad_slot = "0062758803";
+    google_ad_width = 468;
+    google_ad_height = 60;
+    //-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>	
+
+	</div>	
+				<div id="p-menu-right"> </div>
+			</div>	
+            <!-- end #page-menu -->	
+			<!-- End Page-menu -->	
+			
+			<div id="cat-nav" class="clearfix">	
+				<div id="cat-nav-left"> </div>
+				<div id="cat-nav-content"> 
+					
+					<ul class="nav superfish clearfix sf-js-enabled">	
+<li class="cat-item cat-item-3 sf-ul"><a class="sf-with-ul" href="https://www.kreatewebsites.com/">Home </a>
+<ul style="display: none; visibility: hidden;" class="children">
+
+
+</ul>
+</li>
+<li class="cat-item cat-item-3 sf-ul"><a class="sf-with-ul" href="https://www.kreatewebsites.com/europe/" title="Europe">Europe</a>
+<ul style="display: none; visibility: hidden;" class="children">
+<li class="cat-item cat-item-9"><a href="https://www.kreatewebsites.com/scotland/" title="Scotland">Scotland</a></li>
+<li class="cat-item cat-item-9"><a href="https://www.kreatewebsites.com/france/" title="France">France</a></li>
+<li class="cat-item cat-item-9"><a href="https://www.kreatewebsites.com/sweden/" title="Sweden">Sweden</a></li>
+<li class="cat-item cat-item-9"><a href="https://www.kreatewebsites.com/Italy/" title="Edinburgh">Italy</a></li>
+<li class="cat-item cat-item-9"><a href="https://www.kreatewebsites.com/london/" title="London">London</a></li>
+
+
+</ul> 
+</li>
+<li class="cat-item cat-item-5 sf-ul"><a href="https://www.kreatewebsites.com/usa/" >USA</a>
+<ul style="display: none; visibility: hidden;" class="children">
+
+
+
+</ul>
+</li>
+
+<li class="cat-item cat-item-8 sf-ul"><a class="sf-with-ul" href="https://www.kreatewebsites.com/canada/" >Canada</a>
+<ul style="display: none; visibility: hidden;" class="children">
+
+
+</ul>
+</li>
+
+<li class="cat-item cat-item-3 sf-ul"><a class="sf-with-ul" href="https://www.kreatewebsites.com/australia/" >Australia </a>
+<ul style="display: none; visibility: hidden;" class="children">
+
+
+
+
+</ul>
+</li>
+
+<li class="cat-item cat-item-3 sf-ul"><a class="sf-with-ul" href="https://www.kreatewebsites.com/uae/" >UAE </a>
+<ul style="display: none; visibility: hidden;" class="children">
+
+
+</ul>
+
+<li class="cat-item cat-item-3 sf-ul"><a class="sf-with-ul" href="https://www.kreatewebsites.com/sitemap.aspx" >All</a>
+<ul style="display: none; visibility: hidden;" class="children">
+
+
+</ul>
+
+</li>
+</ul>
+					<!-- Start Searchbox -->
+
+
+ <!--#include virtual="~/appblock/searchall_25.htm" -->
+	
+
+				<!-- End Searchbox -->	
+				</div> <!-- end #cat-nav-content -->
+				<div id="cat-nav-right"><!-- end #cat-nav -->		</div>
+			</div>
+		</div> 	<!-- end .container -->
+	</div>
+    <div>
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+
+
+  </div>
+    <div id="content-bottom">
+	<div class="container"></div>
+    </div>
+    <div id="footer">
+	<div class="container clearfix">
+		
+		<div id="recent-comments-5" class="footer-widget widget_recent_comments"><h4 class="widgettitle">
+            Things to enjoy</h4><ul id="recentcomments">
+<li class="page_item page-item-133"><a href="Sitemap.aspx" title="Sitemap">Sitemap</a></li>
+            
+           
+           <br />
+           <li><a href="natural-wonders/"  target="_blank" title="Forts">Natural Wonders</a></li>
+
+<!--
+<li><a href="ski-destinations/"  target="_blank" title="Hill Stations">Ski Destinations</a></li>
+<li><a href="beaches/"  target="_blank" title="Beaches">Beaches</a></li>
+<li><a href="monuments/"  target="_blank" title="Road Trips">Monuments</a></li>
+<li><a href="national-parks/"  target="_blank" title="National Parks">National Parks</a></li>
+<li><a href="national-parks/"  target="_blank" title="National Parks">National Parks</a></li>
+<li><a href="theme-parks/" target="_blank" title="Theme Parks">Theme Parks</a></li>
+
+            -->
+                        </ul></div> <!-- end .footer-widget -->
+            <div id="linkcat-2" class="footer-widget widget_links">
+            <h4 class="widgettitle">
+        Best Places</h4>
+	<ul class="xoxo blogroll">
+
+<li><a href="usa/" >USA</a></li>
+<li><a href="canada/" >Canada</a></li>
+<br />
+
+
+
+
+	</ul>
+</div> <!-- end .footer-widget -->
+<div id="recent-posts-5" class="footer-widget widget_meta">		<h4 class="widgettitle">
+            Travel Websites</h4>		<ul>
+            
+ <li><a href="montana/" >Monatana</a></li>
+<li><a href="colorado/" >Colorado</a></li>
+<li><a href="washington/" >Washington</a></li>
+<br />
+            
+			
+                        
+              
+			
+
+
+				</ul>
+		</div>
+		
+<div id="meta-4" class="footer-widget widget_recent_entries last"><h4 class="widgettitle">Follow Us on</h4>			
+<ul>
+<li><a href="http://www.facebook.com/uscitytrip" title=""><img src="https://www.kreatewebsites.com/images/faceBook.png" style="width:100px; height:40px"   alt="Facebook" title="Follow us on Facebook" />   </a></li>
+<li><a href="https://twitter.com/uscitytrip" title="Follow us on Twitter" target="_blank"  ><img src="https://www.kreatewebsites.com/images/twitter.png" style="width:100px; height:40px" alt="Twitter" title="Follow us on Twitter" /></a></li>
+<li><a href="http://digg.com/placestosee" title=""><img src="https://www.kreatewebsites.com/images/digg.png"  alt="digg" style="width:100px; height:40px" title="Follow us on digg" />   </a></li>
+<li><a href="#" title=""><img src="https://www.kreatewebsites.com/images/linkedin.png"  alt="Linkedin" style="width:100px; height:40px" title="Follow us on Linkedin" />   </a></li>
+
+</ul>
+</div>
+
+<!-- end .footer-widget -->		
+		<div class="clear"></div>
+
+	</div> <!--end .container -->
+</div> <!-- end #footer -->
+
+<div id="footer-bottom">
+	<div class="container clearfix">	
+		<ul class="bottom-nav"> 
+            <li class="current_page_item"><a href="https://www.kreatewebsites.com/"  >Places to see</a></li>
+			
+			
+            
+            <li class="page_item page-item-135"><a href="#" target="_blank" title="Career">Career</a></li>
+            <li class="page_item page-item-135"><a href="Resources.aspx" target="_blank" title="Resources">Resources</a></li>
+            <li class="page_item page-item-135"><a href="Sitemap.aspx" title="Sitemap">Sitemap</a></li>
+			
+         </ul>		
+		<p id="copyright"> CITY TRIP - USCITYTRIP , CANADACITYTRIP, AUSTRALIACITYTRIP</p>
+	</div> <!--end .container -->
+</div> <!-- end #footer-bottom -->
+<script type="text/javascript">
+    //<![CDATA[
+    jQuery.noConflict();
+	
+    jQuery('ul.superfish, #page-menu ul.nav').superfish({ 
+        delay:       200,                            // one second delay on mouseout 
+        animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation 
+        speed:       'fast',                          // faster animation speed 
+        autoArrows:  true,                           // disable generation of arrow mark-up 
+        dropShadows: false                            // disable drop shadows 
+    });
+		
+    jQuery('ul.nav > li > a.sf-with-ul').parent('li').addClass('sf-ul'); 
+		
+    et_search_bar();
+    et_footer_improvements('#footer .footer-widget');
+		
+    <!---- et_switcher plugin v1.3 ---->
+    (function($)
+    {
+        $.fn.et_switcher = function(options)
+        {
+            var defaults =
+            {
+                slides: '>div',
+                activeClass: 'active',
+                linksNav: '',
+                findParent: true, //use parent elements in defining lengths
+                lengthElement: 'li', //parent element, used only if findParent is set to true
+                useArrows: false,
+                arrowLeft: 'prevlink',
+                arrowRight: 'nextlink',
+                auto: false,
+                autoSpeed: 5000
+            };
+
+            var options = $.extend(defaults, options);
+
+            return this.each(function()
+            {
+                var slidesContainer = jQuery(this);
+                slidesContainer.find(options.slides).hide().end().find(options.slides).filter(':first').css('display','block');
+			 
+                if (options.linksNav != '') { 
+                    var linkSwitcher = jQuery(options.linksNav);
+										
+                    linkSwitcher.click(function(){
+                        var targetElement;
+
+                        if (options.findParent) targetElement = jQuery(this).parent();
+                        else targetElement = jQuery(this);
+
+                        if (targetElement.hasClass('active')) return false;
+
+                        targetElement.siblings().removeClass('active').end().addClass('active');
+
+                        var ordernum = targetElement.prevAll(options.lengthElement).length;
+											
+                        slidesContainer.find(options.slides).filter(':visible').hide().end().end().find(options.slides).filter(':eq('+ordernum+')').stop().fadeIn(700);
+                        return false;
+                    });
+                };
+					
+                jQuery('#'+options.arrowRight+', #'+options.arrowLeft).click(function(){
+					  
+                    var slideActive = slidesContainer.find(options.slides).filter(":visible"),
+                        nextSlide = slideActive.next(),
+                        prevSlide = slideActive.prev();
+
+                    if (jQuery(this).attr("id") == options.arrowRight) {
+                        if (nextSlide.length) {
+                            var ordernum = nextSlide.prevAll().length;                        
+                        } else { var ordernum = 0; }
+                    };
+
+                    if (jQuery(this).attr("id") == options.arrowLeft) {
+                        if (prevSlide.length) {
+                            var ordernum = prevSlide.prevAll().length;                  
+                        } else { var ordernum = slidesContainer.find(options.slides).length-1; }
+                    };
+
+                    slidesContainer.find(options.slides).filter(':visible').hide().end().end().find(options.slides).filter(':eq('+ordernum+')').stop().fadeIn(700);
+
+                    if (typeof interval != 'undefined') {
+                        clearInterval(interval);
+                        auto_rotate();
+                    };
+
+                    return false;
+                });   
+
+                if (options.auto) {
+                    auto_rotate();
+                };
+					
+                function auto_rotate(){
+                    interval = setInterval(function(){
+                        var slideActive = slidesContainer.find(options.slides).filter(":visible"),
+                            nextSlide = slideActive.next();
+						 
+                        if (nextSlide.length) {
+                            var ordernum = nextSlide.prevAll().length;                        
+                        } else { var ordernum = 0; }
+						 
+                        if (options.linksNav === '') 
+                            jQuery('#'+options.arrowRight).trigger("click");
+                        else 		 		
+                            linkSwitcher.filter(':eq('+ordernum+')').trigger("click");
+                    },options.autoSpeed);
+                };
+            });
+        }
+    })(jQuery);
+		
+		
+    var $featuredArea = jQuery('#featured'),
+        $all_tabs = jQuery('#all_tabs');
+		
+    if ($featuredArea.length) {
+        $featuredArea.et_switcher({
+            useArrows: true ,
+            auto: true,
+            autoSpeed: 5000										
+        });
+    };
+				
+    if ($all_tabs.length) {
+        $all_tabs.et_switcher({
+            linksNav: 'ul#tab_controls li a'
+        });
+    }; 
+
+				
+    <!---- Footer Improvements ---->
+    function et_footer_improvements($selector){
+        var $footer_widget = jQuery($selector);
+		
+        if (!($footer_widget.length == 0)) {
+            $footer_widget.each(function (index, domEle) {
+                if ((index+1)%4 == 0) jQuery(domEle).addClass("last").after("<div class='clear'></div>");
+            });
+        };
+    };
+		
+    <!---- Search Bar Improvements ---->
+    function et_search_bar(){
+        var $searchform = jQuery('#cat-nav div#search-form'),
+            $searchinput = $searchform.find("input#searchinput"),
+            searchvalue = $searchinput.val();
+				
+        $searchinput.focus(function(){
+            if (jQuery(this).val() === searchvalue) jQuery(this).val("");
+        }).blur(function(){
+            if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
+        });
+    };
+		
+    //]]>	
+	</script>
+	<script type="text/javascript">
+
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-18714837-2']);
+	    _gaq.push(['_trackPageview']);
+
+	    (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+
+</script>
+
+</body>
+</html>
+

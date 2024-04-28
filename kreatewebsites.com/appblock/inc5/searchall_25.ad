@@ -1,0 +1,2 @@
+﻿<!-- Place this tag where you want the search box to render -->
+<gcse:searchbox-only></gcse:searchbox-only>

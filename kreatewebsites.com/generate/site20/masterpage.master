@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/appblock/ad728.ascx" TagName="ad3" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad160.ascx" TagName="ad2" TagPrefix="uc1" %>
+<%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited.ascx" TagName="articlesd" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory.ascx" TagName="articlesdir" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/analytics.ascx" TagName="anal" TagPrefix="uc1_analytics" %>
+<%@ Register Src="~/generate/site19/header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site19/footer.ascx" TagName="footer" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_like_Script.ascx" TagName="facebook" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_display.ascx" TagName="facebookd" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_root.ascx" TagName="facebook_root" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head1" runat="server">
+  
+   
+
+    	<title>Anshul Batra | Software Developer, Architect | name@hotmail.com</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="http://pictures.qutubminar.org/sitecv/reset-fonts-grids.css" media="all" /> 
+	<link rel="stylesheet" type="text/css" href="http://pictures.qutubminar.org/sitecv/resume.css" media="all" />
+
+</head>
+<body>
+
+    <div id="doc2" class="yui-t7">
+	<div id="inner">
+	
+	  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+
+		<div id="ft">
+			
+             <uc1:facebook_root ID="facebook_root" runat="server"></uc1:facebook_root>
+		</div><!--// footer -->
+
+	</div><!-- // inner -->
+
+
+</div><!--// doc -->
+
+
+        
+           
+                
+</body>
+</html>

@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  var vglnk = { key: 'a744bade7eca6d95cda35bcc5626cf8a' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = '//cdn.viglink.com/api/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+
+
+
+
+---
+
+This code should be inserted at the very end of your pages, just before the </body> tag. 
+The code needs to be present on every page where you'd like VigLink to work. The best way to install this code everywhere is to add it to your site's template. 
+For advanced installation and API documentation, visit the Developer Center. 
+Check your installation

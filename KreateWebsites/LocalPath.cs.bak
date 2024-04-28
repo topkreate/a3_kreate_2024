@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+
+
+public static class LocalPath
+{
+
+    static string _InputPath = @"C:\e\a1_sites\10\places-to-see.net\input\";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string InputPath
+    {
+        get
+        {
+            return _InputPath;
+        }
+        set
+        {
+            _InputPath = value;
+        }
+    }
+
+    
+
+    static string _OutPutPath = @"C:\e\a1_sites\10\places-to-see.net\output\";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string OutPutPath
+    {
+        get
+        {
+            return _OutPutPath;
+        }
+        set
+        {
+            _OutPutPath = value;
+        }
+    }
+
+    static string _ComputerPath = LocalPath.OutPutPath + @"content\";
+
+    /// <summary>
+    /// Get or set the static important data.
+    /// </summary>
+    public static string ComputerPath
+    {
+        get
+        {
+            return _ComputerPath;
+        }
+        set
+        {
+            _ComputerPath = value;
+        }
+    }
+
+  
+
+}
+

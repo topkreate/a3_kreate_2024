@@ -1,0 +1,462 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage21.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta name="google-site-verification" content="Ss59FzBgf2_cBNfIx7fq2BtPBeT496_KiV3oUtAPdtI" />
+<META name="y_key" content="0c08d6a2d9011fc7">
+<meta name="msvalidate.01" content="0AF395955EFF220987F9A848B38DF9E9" />
+<title>Internet & Mobile Websites</title>
+<link href="http://www.webpage3.com/style.css" rel="stylesheet" type="text/css" />
+<style type="http://www.webpage3.com/text/css"> 
+<!--
+.style1 {font-weight: bold}
+-->
+</style>
+</head>
+ 
+<body>
+    <form id="form1" runat="server">
+<center>
+<div id="border">
+<div id="logo-bg></div>
+<div class="tag">
+    <div id="rc4">
+        <asp:Image ID="Image1" runat="server" ImageAlign="Right" 
+            ImageUrl="~/images/globe1.JPG" Width="100px" AlternateText="Globe with mobile" /></div>
+    
+    <center style="color: #800000; font-size: xx-large; font-weight: bold; font-style: italic; width: 456px; font-family: 'Monotype Corsiva'; text-align: center;"> 
+        A place for the best<br />
+        Internet 
+        
+        & 
+        
+        Mobile Websites<br />
+        
+                </center>
+                <asp:Label ID="Label1" runat="server" Text="Digital Revolution" 
+                    Font-Italic="True" Font-Names="Monotype Corsiva" Font-Size="Medium"></asp:Label>
+    
+    
+</div>
+<div id="links-bg">
+    <div class="toplinks">
+        <asp:HyperLink ID="hlH1" runat="server" ForeColor="White" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+    </div>
+    <div class="sap"></div>
+    <div class="toplinks"><a href="http://www.webpage3.com/ServicesnSolution.aspx" style="color: White">Services & Solutions</a></div>
+    <div class="sap"></div>
+    <div class="toplinks"><a href="http://www.webpage3.com/QuotesnEnquiry.aspx" style="color: White">Quotes & Enquiry</a></div>
+    <div class="sap"></div>
+    <div class="toplinks"><a href="http://www.webpage3.com/Career.aspx" style="color: White">Career</a></div>
+    <div class="sap"></div>
+    <div class="toplinks"><a href="http://www.webpage3.com/Partnership_or_Affiliate.aspx" style="color: White">Partnership/Affiliate</a></div>
+    <div class="sap"></div>
+    <div class="toplinks"><a href="#" style="color: White">Testimonials</a></div>
+    <div class="sap"></div>
+    <div class="toplinks"><a href="http://www.webpage3.com/Design-Tips/Different%20Methods%20to%20create%20webpages.html" style="color: White">Articles</a></div>
+    <div class="sap"></div>
+    <div class="toplinks"><a href="http://www.webpage3.com/Feedback.aspx" style="color: White">Contact Us</a></div>
+</div>
+<div>
+<div id="header-bg">
+<%--<div id="rc4"></div>--%>
+<div id="bg2">
+<div class="welcome">
+    <table style="background-color: #FFFFE1">
+        <tr style="height:100px">
+           <%-- <td valign="top" style="background-color:#E6E6E6">--%>
+            <td valign="top" style="background-color:White;">
+            
+              <%--  <asp:TreeView ID="TreeView1" runat="server" BackColor="#E6E6E6" 
+                    ShowExpandCollapse="False" Height="29px" NodeIndent="10">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                    HorizontalPadding="0px" VerticalPadding="0px" />
+                <Nodes>
+                    <asp:TreeNode Text="Domain Registration" Value="Domain Registration">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Web Site Development" Value="Web Site Development">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Web Store Development" Value="Web Store Development">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Web Promotions" Value="Web Promotions">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Promoting Site On Web Magazines" 
+                        Value="Promoting Site On Web Magazines">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="SEO Writing" Value="SEO Writing"></asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------" 
+                        Value="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Web Magazine &amp; Web Book Development" 
+                        Value="Web Magazine And Web Book Development"></asp:TreeNode>
+                </Nodes>
+                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                    HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>--%>
+            </td>
+            <td style="color:Black" valign="top" align="center">
+                <div style="height: 179px">
+                    <table width="100%"><tr><td style="background-color:#E6E6E6">Web Hosting Services</td></tr></table>
+                    
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/images/Webhosting.jpg" 
+                        Width="180px" Height="150px" AlternateText="Web Hosting" />
+                    
+                </div>
+            </td>
+            <td valign="top" align="center">
+                <div style="color:Black">
+                    <table width="100%"><tr><td style="background-color:#E6E6E6">Domain Registration</td></tr></table>  
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/images/DomainRegistration1.jpg" 
+                        Width="200px" Height="150px" AlternateText="Domain Registration" />
+                    
+                </div>
+            </td>
+             <td style="color:Black" align="center" valign="top">
+                <div>
+                    <table width="100%"><tr><td style="background-color:#E6E6E6">eMail Hosting</td></tr></table>  
+                    <asp:Image ID="Image4" runat="server" ImageUrl="~/images/email_hosting_img.jpg" 
+                        Width="190px" Height="150px" AlternateText="Email hosting" />
+                    
+                </div>
+            </td>
+            <td style="color:Black" align="center" valign="top">
+                <div>
+                    <table width="100%"><tr><td style="background-color:#E6E6E6">Web Designing </td></tr></table>  
+                    <asp:Image ID="Image5" runat="server" ImageUrl="~/images/WebDesign.jpg" 
+                        Width="244px" Height="150px" AlternateText="Web Designing" />
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+   
+    </div>
+</div>
+</div>
+</div>
+<div id="main">
+    <table border="1" width="100%">
+        <tr>
+            <td valign="top">
+            <div>
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" 
+                    Font-Size="0.8em" PathSeparator=" : ">
+                    <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
+                    <CurrentNodeStyle ForeColor="#333333" />
+                    <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
+                    <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
+                </asp:SiteMapPath>
+                
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        
+            </div>
+            <br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>        
+            </td>
+        </tr>
+    </table>
+    
+    
+</div>
+<%--<div id="rc6"></div>
+
+<div id="bottom">
+<div id="bottom1">
+<div class="bottomlink" style="width:50px">
+    <asp:HyperLink ID="hlF1" runat="server" ForeColor="Black" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+</div>--%>
+<%--<div class="sap2">
+    <div class="sap2">|</div>
+</div>
+<div class="bottomlink" style="width:130px">
+    <asp:HyperLink ID="hlF2" runat="server" ForeColor="Black" NavigateUrl="~/ServicesnSolution.aspx">Services & Solutions</asp:HyperLink>
+</div>
+<div class="sap2">|</div>
+<div class="bottomlink">
+    <asp:HyperLink ID="hlF3" runat="server" ForeColor="Black" NavigateUrl="~/QuotesnEnquiry.aspx">Quotes & Enquiry</asp:HyperLink>
+</div>
+<div class="sap2">|</div>
+<div class="bottomlink" style="width:70px">
+    <asp:HyperLink ID="hlF4" runat="server" ForeColor="Black" NavigateUrl="#">Career</asp:HyperLink>
+</div>
+<div class="sap2">|</div>
+<div class="bottomlink" style="width:90px">
+    <asp:HyperLink ID="hlF5" runat="server" ForeColor="Black" NavigateUrl="#">Partnership</asp:HyperLink>
+</div>
+<div class="sap2">|</div>
+<div class="bottomlink" style="width:90px">
+    <asp:HyperLink ID="hlF6" runat="server" ForeColor="Black" NavigateUrl="#">Testimonials</asp:HyperLink>
+</div>
+<div class="sap2">|</div>
+<div class="bottomlink" style="width:80px">
+    <asp:HyperLink ID="hlF8" runat="server" ForeColor="Black" NavigateUrl="#">Articles</asp:HyperLink>
+</div>
+<div class="sap2">|</div>
+<div class="bottomlink" style="width:90px">
+    <asp:HyperLink ID="hlF7" runat="server" ForeColor="Black" NavigateUrl="~/Feedback.aspx">Contact Us</asp:HyperLink>
+</div>
+<div class="sap2">|</div>
+<div class="b|</div>
+<div class="bottomlink" style="width:90px">
+    <asp:HyperLink ID="hlF9" runat="server" ForeColor="Black" NavigateUrl="~/AboutUs.aspx">About 
+    Us</asp:HyperLink>
+</div>
+<div>
+    
+</div>
+</div>--%>
+<%--<div style="height:120px; width:642px">
+    <table align="left">
+        <tr style="height:100px">
+            <td valign="top" style="background-color:#E6E6E6">
+            
+                <asp:TreeView ID="TreeView3" runat="server" BackColor="#E6E6E6" 
+                    ShowExpandCollapse="False" Height="29px" NodeIndent="10">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                    HorizontalPadding="0px" VerticalPadding="0px" />
+                <Nodes>
+                    <asp:TreeNode Text="Build Your Web Presence And Brand" 
+                        Value="Build Your Web Presence And Brand">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Websites For Self Employed And Business" 
+                        Value="Websites For Self Employed And Business">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Marketing Campaign And Web Promotion" 
+                        Value="Marketing Campaign And Web Promotion">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Rent a Site/Promoting Site On Web Magazines" 
+                        Value="Rent a Site/Promoting Site On Web Magazines">
+                    </asp:TreeNode>
+                </Nodes>
+                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                    HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            </td>
+            <td>
+                <asp:TreeView ID="TreeView1" runat="server" BackColor="#E6E6E6" 
+                    ShowExpandCollapse="False" Height="29px" NodeIndent="10">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                    HorizontalPadding="0px" VerticalPadding="0px" />
+                <Nodes>
+                    <asp:TreeNode Text="Connect With Customers" Value="Web Store Development">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Web Promotions" Value="Web Promotions">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Personal And Family Websites" 
+                        Value="Personal And Family Websites">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Email And Mobile Compaign" 
+                        Value="Email And Mobile Compaign"></asp:TreeNode>
+                </Nodes>
+                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                    HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            </td>
+             <td>
+                <asp:TreeView ID="TreeView4" runat="server" BackColor="#E6E6E6" 
+                    ShowExpandCollapse="False" Height="29px" NodeIndent="10">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                    HorizontalPadding="0px" VerticalPadding="0px" />
+                <Nodes>
+                    <asp:TreeNode Text="Domain Registration" Value="Domain Registration">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="SEO Writing" Value="SEO Writing">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Connect With Customers" 
+                        Value="Personal And Family Websites">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="--------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Selling Online" 
+                        Value="Email And Mobile Compaign"></asp:TreeNode>
+                </Nodes>
+                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                    HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            </td>
+           </tr>
+           </table>
+</div>--%>
+<%--<div class="style1" style="height:18px; color:Black">Copright 
+    @2009-2010 Webpage3.com. All Rights Reserved.
+</div>--%>
+<%--<div id="rc6"></div>--%>
+
+<div id="bottom">
+<div style="height:160px; width:836px">
+    
+    <br />
+    <table align="left" 
+        style="background-color: #F5F5F5; width: 836px; height:80%; margin-left: 0px;">
+        <tr style="height:100px; width:100px">
+            <td style="width:60px"></td>
+            <td valign="top">
+                <asp:TreeView ID="TreeView4" runat="server" 
+                    ShowExpandCollapse="False" Height="34px" NodeIndent="10">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                    HorizontalPadding="0px" VerticalPadding="0px" />
+                <Nodes>
+                    <asp:TreeNode Text="Domain Registration" Value="Domain Registration" 
+                        NavigateUrl="~/DomainRegistration.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="SEO Writing" Value="SEO Writing" NavigateUrl="~/SEOWriting.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Connect With Customers" 
+                        Value="Personal And Family Websites" NavigateUrl="~/ConnectCustomer.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Selling Online" 
+                        Value="Email And Mobile Compaign" NavigateUrl="~/SellingOnline.aspx"></asp:TreeNode>
+                    <asp:TreeNode Text="------------------------------" 
+                        Value="------------------------------"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="~/SiteMap.aspx" Text="Site Map" Value="Site Map">
+                    </asp:TreeNode>
+                </Nodes>
+                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                    HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            </td>
+            <td valign="top">
+                <asp:TreeView ID="TreeView1" runat="server" 
+                    ShowExpandCollapse="False" Height="29px" NodeIndent="10">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                    HorizontalPadding="0px" VerticalPadding="0px" />
+                <Nodes>
+                    <asp:TreeNode Text="Web Promotions" Value="Web Promotions">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="------------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Personal &amp; Family Websites" 
+                        Value="Personal &amp; Family Websites" 
+                        NavigateUrl="~/PersonalnFamilyWebsite.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="------------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Email &amp; Mobile Campaign" 
+                        Value="Email &amp; Mobile Campaign" 
+                        NavigateUrl="~/EmailnMobileCampaign.aspx"></asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" Text="------------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Web Magazines &amp; Wesite Development" 
+                        Value="Web Magazines And Wesite Development">
+                    </asp:TreeNode>
+                </Nodes>
+                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                    HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            </td>
+            <td valign="top" >
+            
+                <asp:TreeView ID="TreeView3" runat="server"  
+                    ShowExpandCollapse="False" Height="29px" NodeIndent="10">
+                <ParentNodeStyle Font-Bold="False" />
+                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                    HorizontalPadding="0px" VerticalPadding="0px" />
+                <Nodes>
+                    <asp:TreeNode Text="Build Your Web Presence And Brand" 
+                        Value="Build Your Web Presence And Brand" 
+                        NavigateUrl="~/WebPresencenBrand.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" 
+                        Text="--------------------------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Websites For Self Employed And Business" 
+                        Value="Websites For Self Employed And Business" 
+                        NavigateUrl="~/SelfEmployed.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" 
+                        Text="--------------------------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Marketing Campaign And Web Promotion" 
+                        Value="Marketing Campaign And Web Promotion" 
+                        NavigateUrl="~/MarketingCampaign.aspx">
+                    </asp:TreeNode>
+                    <asp:TreeNode SelectAction="None" 
+                        Text="--------------------------------------------------"></asp:TreeNode>
+                    <asp:TreeNode Text="Rent a Site/Promoting Site On Web Magazines" 
+                        Value="Rent a Site/Promoting Site On Web Magazines">
+                    </asp:TreeNode>
+                </Nodes>
+                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                    HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            </td>
+            
+             
+             
+           </tr>
+           </table>
+</div>
+<div id="bottom1">
+    <div class="bottomlink" style="width:50px">
+        <asp:HyperLink ID="hlF1" runat="server" ForeColor="Black" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+    </div>
+    <div class="sap2">
+        <div class="sap2">|</div>
+    </div>
+    <div class="bottomlink" style="width:130px">
+        <asp:HyperLink ID="hlF2" runat="server" ForeColor="Black" NavigateUrl="~/ServicesnSolution.aspx">Services & Solutions</asp:HyperLink>
+    </div>
+    <div class="sap2">|</div>
+    <div class="bottomlink">
+        <asp:HyperLink ID="hlF3" runat="server" ForeColor="Black" NavigateUrl="~/QuotesnEnquiry.aspx">Quotes & Enquiry</asp:HyperLink>
+    </div>
+    <div class="sap2">|</div>
+    <div class="bottomlink" style="width:70px">
+        <asp:HyperLink ID="hlF4" runat="server" ForeColor="Black" NavigateUrl="~/Career.aspx">Career</asp:HyperLink>
+    </div>
+    <div class="sap2">|</div>
+    <div class="bottomlink" style="width:115px">
+        <asp:HyperLink ID="hlF5" runat="server" ForeColor="Black" NavigateUrl="~/Partnership_or_Affiliate.aspx">Partnership/Affiliate</asp:HyperLink>
+    </div>
+    <div class="sap2">|</div>
+    <div class="bottomlink" style="width:90px">
+        <asp:HyperLink ID="hlF6" runat="server" ForeColor="Black" NavigateUrl="#">Testimonials</asp:HyperLink>
+    </div>
+    <div class="sap2">|</div>
+    <div class="bottomlink" style="width:78px">
+        <asp:HyperLink ID="hlF8" runat="server" ForeColor="Black" NavigateUrl="#">Articles</asp:HyperLink>
+    </div>
+    <div class="sap2">|</div>
+    <div class="bottomlink" style="width:85px">
+        <asp:HyperLink ID="hlF7" runat="server" ForeColor="Black" NavigateUrl="~/Feedback.aspx">Contact Us</asp:HyperLink>
+    </div>
+    <div class="sap2">|</div>
+    <div class="bottomlink" style="width:70px">
+        <asp:HyperLink ID="hlF9" runat="server" ForeColor="Black" NavigateUrl="~/AboutUs.aspx">About 
+        Us</asp:HyperLink>
+    </div>
+
+<div class="style1" style="height:28px; line-height:28px; color:Black">CONTENT COPYRIGHT 2009-2010. WEBPAGE3. ALL RIGHTS RESERVED.</div>
+</div>
+<%--<div id="rc7"></div>--%>
+</div>
+</center>
+    </form>
+</body>
+</html>

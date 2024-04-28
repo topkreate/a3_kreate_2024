@@ -1,0 +1,152 @@
+﻿<%@ Page Language="C#"  AutoEventWireup="true" CodeFile="Mobiles.aspx.cs" Inherits="Default" CodeFileBaseClass="BasePage"  %>
+
+<%@ Register Src="control/mobile3.ascx" TagName="mobile" TagPrefix="uc1" %>
+<%@ Register Src="header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="control/mobilecompany3.ascx" TagName="mobilecompany" TagPrefix="uc1" %>
+<%@ Register Src="control/mobileos3.ascx" TagName="mobileos" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+		<head id="head1" runat="server" title="Mobiles">
+	
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+      
+		<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="http://pictures.yellp.mobi/site3/css/5grid/core.css" /><link rel="stylesheet" href="http://pictures.yellp.mobi/site3/css/5grid/core-desktop.css" /><link rel="stylesheet" href="http://pictures.yellp.mobi/site3/css/5grid/core-1200px.css" /><link rel="stylesheet" href="http://pictures.yellp.mobi/site3/css/5grid/core-noscript.css" /><link rel="stylesheet" href="http://pictures.yellp.mobi/site3/css/style.css" /><link rel="stylesheet" href="http://pictures.yellp.mobi/site3/css/style-desktop.css" /></noscript>
+		<script src="http://pictures.yellp.mobi/site3/css/5grid/jquery.js"></script>
+		<script src="http://pictures.yellp.mobi/site3/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI.titleBarHeight=55&amp;mobileUI.openerWidth=66"></script>
+		<!--[if IE 9]><link rel="stylesheet" href="http://pictures.yellp.mobi/site3/css/style-ie9.css" /><![endif]-->
+	</head>
+	<body>
+	<!-- ********************************************************* -->  
+           
+        <uc1:header ID="header" runat="server"></uc1:header>
+
+
+
+		
+		<div id="banner-wrapper">
+			<div class="5grid-layout">
+				<div class="row">
+					<div class="12u">
+					
+						<div id="banner">
+							<h2><asp:Label runat="server" ID="lblTitle"></asp:Label></h2>
+							
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="5grid-layout">
+				<div class="row main-row">
+					<div class="4u">
+						
+						<section>
+							<h2>Best Hotels in Las Vegas!</h2>
+							<p>Stay at</p>
+							<footer class="controls">
+								<a href="http://www.yellp.mobi/BestSeason/" class="button">More hotels ...</a>
+							</footer>
+						</section>
+					
+					</div>
+                     <uc1:mobile ID="mobiles" runat="server"></uc1:mobile>
+                		
+               </div>	
+                </div>
+
+               
+            <div class="5grid-layout">
+
+                    <div class="4u">
+					
+						<section>
+							<h2>Links</h2>
+							<div class="5grid">
+								<div class="row">
+					<div class="6u">
+                        <ul class="link-list">	
+						
+							
+							                                      
+								
+                                    <uc1:mobileos ID="mobileos" runat="server"></uc1:mobileos>	
+                        </ul>
+                           
+				     </div>
+                 
+											
+									
+									<div class="6u">
+										<ul class="link-list">
+										
+                <uc1:mobilecompany ID="mobilecompany" runat="server"></uc1:mobilecompany>	
+											
+										</ul>
+									</div>
+
+
+                                    	</div>
+							</div>
+						</section>
+
+					</div>
+
+
+
+                </div>
+            
+            
+        </div>
+				
+				
+                                   
+					
+			
+				
+		
+		
+
+
+
+        <div id="footer-wrapper">
+			<div class="5grid-layout">
+				<div class="row">
+					<div class="8u">
+						
+						<section>
+							<h2>Ads</h2>
+							<!--#include virtual="~/appblock/inc/ad300.ad" -->
+						</section>
+					
+					</div>
+					<div class="4u">
+
+						<section>
+							<h2>Things to do </h2>
+							<p>Know about event organizers, best things to do </p>
+							<footer class="controls">
+								<a href="http://www.yellp.mobi/BestSeason/" class="button">Plan your weekend with us....</a>
+							</footer>
+						</section>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u">
+
+						<div id="copyright">
+							&copy;  All rights reserved. | Design by: <a href="http://www.yellp.mobi/">Yellow pages</a> |  <a href="http://www.yellp.mobi/privacypolicy.aspx"> Privacy Policy</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- ********************************************************* -->
+	</body>
+</html>

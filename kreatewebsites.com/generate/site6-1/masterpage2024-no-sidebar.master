@@ -1,0 +1,265 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterpage2023.master.cs" Inherits="Master" %>
+
+
+<%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory.ascx" TagName="articlesub" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory.ascx" TagName="articlesdirectory" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited.ascx" TagName="articlesdirectorylimited" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_root.ascx" TagName="facebook_root" TagPrefix="uc1" %>
+<%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head id="head1" runat="server">
+		<!-- ad code -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9804321536688475"
+     crossorigin="anonymous"></script>
+		<!-- end ad code -->
+		<title>Kreate Websites</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+              		
+
+         <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+		<link rel="icon" href="https://storage.googleapis.com/json_articles/dataknobs-logo-2.jpg">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/js/jquery-1.8.3.min.js"></script>
+		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/js/jquery.dropotron-1.2.js"></script>
+		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core-desktop.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core-1200px.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core-noscript.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/style.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/ie7.css" /><![endif]-->
+
+
+
+
+	</head>
+  
+	<body class="no-sidebar">
+         
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="5grid-layout">
+					<div class="row">
+						<div class="12u">
+						
+							<!-- Header -->
+								<header id="header">
+								
+									<!-- Logo -->
+										
+										<div class="inner">
+										
+											<h1> <asp:HyperLink ID="topheader" runat="server" class="mobileUI-site-name"></asp:HyperLink></h1>
+										
+									        
+										</div>
+									
+									
+									<!-- Nav -->
+										<nav id="nav" class="mobileUI-site-nav">
+											<ul>
+												 <li><asp:HyperLink ID="hyperlinkHome" runat="server" ></asp:HyperLink></li>
+												<!--
+														<uc1:articleshome ID="articleshome" runat="server"></uc1:articleshome>
+												-->
+                                               
+											</ul>
+										</nav>
+								
+								</header>
+                               
+
+						</div>
+					</div>
+				</div>
+			
+		</div>
+
+		<div id="main-wrapper">
+				<div class="main-wrapper-style2">
+					<div class="inner">
+						<div class="5grid-layout">
+							<div class="row">
+								<div class="12u">
+									<div id="content mobileUI-main-content">
+
+										<article>
+												
+													<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+										</article>
+									</div>
+								<div id="content mobileUI-main-content">
+
+										<article>
+											<h4> Ads</h4>
+											<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9804321536688475"
+												crossorigin="anonymous"></script>
+												<!-- Dataknobs-Ad-uit -->
+												<ins class="adsbygoogle"
+												style="display:block"
+												 data-ad-client="ca-pub-9804321536688475"
+												data-ad-slot="4992732996"
+												data-ad-format="auto"
+												data-full-width-responsive="true"></ins>
+											<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+										</article>
+								</div>
+								</div>  <!-- 8 u -->
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-wrapper-style3">
+
+					<div class="inner">
+
+						<div class="5grid-layout">
+
+							<div class="row">
+
+								<div class="8u">
+
+
+
+									<!-- Article list -->
+
+										<section class="box-article-list">
+
+											<h2 class="icon icon-news">From the blog</h2>
+
+											
+
+											<!-- Excerpt -->
+
+												<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+
+
+											<!-- Excerpt -->
+
+
+
+
+										</section>
+
+								</div>
+
+								<div class="4u">
+
+								
+
+									<!-- Spotlight -->
+
+										<section class="box-spotlight pad-left">
+
+											<h2 class="icon icon-paper">Spotlight</h2>
+
+											<asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+
+										</section>
+
+								
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+		</div>
+
+
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+		
+				<footer id="footer" class="5grid-layout">
+					<div class="row">
+    
+						<div class="3u">
+						
+						
+								<section class="widget-links">
+									<h2>Main pages</h2>
+									<ul class="style2">
+										<asp:HyperLink ID="hyperlink1" runat="server" ></asp:HyperLink>
+										<uc1:articleshome ID="Articleshome3" runat="server"></uc1:articleshome>
+									</ul>
+								</section>
+						
+						</div>
+						<div class="3u">
+						
+							
+								<section class="widget-links">
+									<h2>Related Pages </h2>
+									<ul class="style2">
+										<uc1:articles ID="articles1" runat="server"></uc1:articles>
+										
+									</ul>
+								</section>
+						
+						</div>
+						<div class="3u">
+						
+					
+								<section class="widget-links">
+									<h2>Explore more </h2>
+									<ul class="style2">
+										<uc1:articlesub ID="Articlesub2" runat="server"></uc1:articlesub>
+									</ul>
+								</section>
+						
+						</div>
+						<div class="3u">
+						
+						
+								<section class="widget-contact last">
+									<h2>Contact Us</h2>
+									<ul>
+										<li><a href="#" class="twitter">Twitter</a></li>
+										<li><a href="#" class="facebook">Facebook</a></li>
+										<li><a href="#" class="googleplus">Linkedin</a></li>
+									</ul>
+									<p>
+									Redmond, WA <br />
+									USA  </p>
+								</section>
+						
+						</div>
+                        
+					</div>
+					<div class="row">
+						<div class="12u">
+							 <div id="copyright">
+							&copy;  Design: <asp:HyperLink ID="cright" runat="server" ></asp:HyperLink> | <asp:HyperLink ID="sitemap" runat="server" ></asp:HyperLink>  | <asp:HyperLink ID="privacypolicy" runat="server" ></asp:HyperLink>
+								 <p></p>
+						</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+	</body>
+</html>

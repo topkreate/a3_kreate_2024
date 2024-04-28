@@ -1,0 +1,141 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/appblock/ad728.ascx" TagName="ad3" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad160.ascx" TagName="ad2" TagPrefix="uc1" %>
+<%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited.ascx" TagName="articlesd" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory.ascx" TagName="articlesdir" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/analytics.ascx" TagName="anal" TagPrefix="uc1_analytics" %>
+<%@ Register Src="~/generate/site19/header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site19/footer.ascx" TagName="footer" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_like_Script.ascx" TagName="facebook" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_display.ascx" TagName="facebookd" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_root.ascx" TagName="facebook_root" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Thanks Giving</title>
+    <link href="http://www.thanks-giving.net/style.css" rel="stylesheet" type="text/css" />
+    <meta name="google-site-verification" content="OZkMR8uRudQ4iuWxq_dUu3TGYE2btqmhlNB8yUycU8U" />
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18714837-31']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+
+</head>
+<body>
+    <uc1:facebook_root ID="facebook_root" runat="server"></uc1:facebook_root>
+    <center>
+        <!--main-div-->
+        <div id="main">
+            <!--logo-div-->
+            <div id="logo">
+                <div id="commonblockone">
+                    <h1><asp:Label ID="lblTitle" runat="Server"></asp:Label></h1></div>
+                <div id="commonblocktwo">
+                    <div id="link2">
+                        <ul>
+                           <uc1:header ID="header1" runat="server"></uc1:header>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--logo-div-end-->
+            <!--header-div-->
+            <div id="header">
+                <div style="float: left; border: 0px red solid">
+                    <img src="https://pictures.kreatewebsites.com/site19/images2/header_imgleft.jpg" /></div>
+                <div style="float: left; width: 400px; padding-left: 20px;">
+                    <div style="height: 42px">
+                    </div>
+                    <div style="height: 97px; padding-left: 140px">
+                        <img src="https://pictures.kreatewebsites.com/site19/images2/caption.jpg" /></div>
+                    <div>
+                        <img src="https://pictures.kreatewebsites.com/site19/images2/product_one.jpg" /></div>
+                </div>
+                <!--<div id="headerright">
+				<div id="headercaption"><img src="images2/caption.jpg" /></div>
+				<div id="headerproduct" style="border:1px solid #fff;"><img src="images2/product_one.jpg" align="left"/></div>
+			</div>-->
+            </div>
+            <!--header-div-end-->
+            <!--div-two-->
+            <div style="width: 981px;">
+                <div id="container">
+                    <!--leftbar-->
+                    <div id="leftbar">
+                        
+                        
+                            <div id="subcategorylinks">
+                                <ul>
+                                    <strong>
+                                        <uc1:articles ID="articles" runat="server"></uc1:articles>
+                                       </strong>
+                                        <br />
+                                        </ul>
+                                        <ul>
+                                           <uc1:articlesd ID="articlesd" runat="server"></uc1:articlesd>
+                                                    </ul>
+                                                
+                                            
+                                        
+                            </div>
+                          
+                          <div>
+                            Ads
+                              <div align="center">
+                                                    <uc1:ad2 ID="ad2" runat="server"></uc1:ad2>
+                                               </div>                   
+                                                
+                                                
+                        </div>
+                    </div>
+                   
+                    <!--leftbar-end-->
+                    <!--content-->
+                    <div id="content">
+                        <div style="width: 720px; height: 1400px">
+                             
+                            <p>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </p>
+                            <div align="center">
+                                <uc1:ad3 ID="ad3" runat="server"></uc1:ad3>
+                            </div>
+                            <br />
+                            <br />
+                            <div align="center">
+                                <uc1:ad3 ID="ad31" runat="server"></uc1:ad3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content-end-->
+                </div>
+            </div>
+            <!--div-two-end-->
+            <!--footer-div-->
+            <div style="width: 981px; background-color: #FFFFCC;">
+                <div id="footer">
+                    <div>
+                        <uc1:footer ID="footer" runat="server"></uc1:footer>
+                    </div>
+                </div>
+            </div>
+            <!--footer-div-end-->
+        </div>
+        <!--main-div-end-->
+    </center>
+</body>
+</html>

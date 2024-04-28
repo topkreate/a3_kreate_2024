@@ -1,0 +1,53 @@
+/*
+	ZeroFour 1.0 by Cheap Website
+	cheapwebsite.mobi | @Cheap website
+	Free for personal and commercial use under the CCA 3.0 license (cheapwebsite.mobi/license)
+*/
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+	}
+
+		#header .inner
+		{
+			background: #333;
+		}
+	
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#main-wrapper
+	{
+	}
+
+		#main-wrapper .main-wrapper-style1
+		{
+		}
+
+			#main-wrapper .main-wrapper-style1:before
+			{
+				background: none;
+			}
+
+		#main-wrapper .main-wrapper-style3
+		{
+		}
+
+			#main-wrapper .main-wrapper-style3:before
+			{
+				background: none;
+			}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	.dropotron
+	{
+		background: #333;
+	}
