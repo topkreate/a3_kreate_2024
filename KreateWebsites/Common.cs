@@ -255,6 +255,22 @@ namespace KreateWebsites
 
         }
 
+        /* 2024 */
+        static int _genCount = 1;
+        public static int genCount
+        {
+            get
+            {
+                return _genCount;
+            }
+            set
+            {
+                _genCount = value;
+            }
+
+        }
+
+
         static string _ImageurlOrg = null;
 
         /// <summary>

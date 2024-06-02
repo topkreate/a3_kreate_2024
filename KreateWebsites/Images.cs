@@ -144,7 +144,8 @@ namespace KreateWebsites
 
               DataTable dt = GetTable();
            GetImagePath(inputdir,name);
-           GetThumbnailPath(inputdir);//Jan 2016
+            /* GetThumbnailPath(inputdir);  */ //Jan 2016
+            GetThumbnailPath(inputdir,name);//May 2024
 
             /* Dec 2021 */
             KreateWebsites.Generate.kreatelog("images.cs data table " + inputdir);
@@ -258,16 +259,50 @@ namespace KreateWebsites
               Generate.kreatelog("In GetThumbnail path");
               if (File.Exists(inputdir + @"\gallery_thumbnails.path"))
               {
-                  string str = System.IO.File.ReadAllText(inputdir + @"\gallery_thumbnails.path");
+
+                 Generate.kreatelog2("In GetThumbnail path gallery");
+                 string str = System.IO.File.ReadAllText(inputdir + @"\gallery_thumbnails.path");
 
                   thumbnail_path = str.TrimEnd('\r', '\n', ' ', '\t');  // This will remove any combination of carriage returns and newlines from 
-                  Generate.kreatelog("In GetThumbnail path" + thumbnail_path);
+                  Generate.kreatelog2("In GetThumbnail path" + thumbnail_path);
                   Generate.AppendSlash(ref thumbnail_path); // add slaah is missing at end
               }
+              
 
 
 
-          }
+        }
+
+        public static void GetThumbnailPath(string inputdir, string name)
+        {
+            thumbnail_path = Common.Gallery.thumbnailpath;
+            Generate.kreatelog("In GetThumbnail path2 new");
+            if (File.Exists(inputdir + @"\gallery_thumbnails.path"))
+            {
+
+                Generate.kreatelog("In GetThumbnail path2 gallery");
+                string str = System.IO.File.ReadAllText(inputdir + @"\gallery_thumbnails.path");
+
+                thumbnail_path = str.TrimEnd('\r', '\n', ' ', '\t');  // This will remove any combination of carriage returns and newlines from 
+                Generate.kreatelog("In GetThumbnail path2" + thumbnail_path);
+                Generate.AppendSlash(ref thumbnail_path); // add slaah is missing at end
+            }
+            /* May 2024  .  Instead of gallery_thumbnails_path use imagefile  */
+            if (File.Exists(inputdir + @"\" + name + @".thumbnails_path"))
+            {
+                Generate.kreatelog("In GetThumbnail path2 actual file");
+                string str = System.IO.File.ReadAllText(inputdir + @"\" + name + @".thumbnails_path");
+
+                thumbnail_path = str.TrimEnd('\r', '\n', ' ', '\t');  // This will remove any combination of carriage returns and newlines from 
+                Generate.kreatelog("In GetThumbnail path2 for imagefile" + thumbnail_path);
+                Generate.AppendSlash(ref thumbnail_path); // add slaah is missing at end
+
+
+            }
+
+
+
+        }
     }
 }
 
