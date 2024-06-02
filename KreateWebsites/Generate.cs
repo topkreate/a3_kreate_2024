@@ -1420,6 +1420,11 @@ namespace KreateWebsites
                             /* 2023 */
                             Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.desc", @".desc", 1, name, Common.genDesc);
                             Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.keywords", @".keywords", 1, name, Common.genKeywords);
+
+                            /* May 2024 */
+                            kreatelog("may2024 - 7 passed");
+                            Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.count", @".count", 7, name, Common.genCount);
+                            
                             // DEc 28 try, not needed    Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.articleslist", @".articleslist", 1, name, Common.genArticleslist); 
                             // OutputUrl = outputdir + subfolder + "/" + name + ".html";
                             OutputUrl = outputdir + subfolder + @"/" + articleurl + ".html";
@@ -1466,6 +1471,11 @@ namespace KreateWebsites
                             Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.desc", @".desc", 1, name, Common.genDesc);
                             Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.keywords", @".keywords", 0, name, Common.genKeywords);
 
+
+                            /* May 2024 7 for generate case statement for count*/
+                            kreatelog("May 2024 2 - 7 passed");
+                            Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.count", @".count", 7, name, Common.genCount);
+
                             OutputUrl = outputdir + subfolder + @"/" + articleurl + ".html";
 
                             i++;
@@ -1503,6 +1513,10 @@ namespace KreateWebsites
                             /* 2023 */
                             Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.desc", @".desc", 1, name, Common.genDesc);
                             Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.keywords", @".keywords", 0, name, Common.genKeywords );
+
+                            /* May 2024 7 for generate case statement for count */
+                            kreatelog("May 2024 3 - 7 passed");
+                            Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.count", @".count", 7, name, Common.genCount);
 
                             OutputUrl = outputdir + subfolder + @"/" + articleurl + ".html";
 
@@ -1551,6 +1565,9 @@ namespace KreateWebsites
                 kreatelog("in config check + " + dir + @"\" + gen_config_file + ext +  name);
             }
         }
+
+        /* May 2024 */
+        // Generate.ConfigFileCheckAndGenerate(inputdir + subfolder + @"\", @"gen.count", @".count", 1, name, Common.genCount);
         public static void ConfigFileCheckAndGenerate(string dir, string gen_config_file, string ext, int action, string name, int genFlag)
         {
             // config_file example = gen.title
@@ -1560,7 +1577,10 @@ namespace KreateWebsites
             }
             else
             {
-                Generate.filegenerate(dir + @"\", gen_config_file, ext, 1, name, genFlag);  //Nov 15 function
+                // May 2024
+                // error instead of 1 - action should be passed but need through testing
+                // Generate.filegenerate(dir + @"\", gen_config_file, ext, 1, name, genFlag);  //Nov 15 function
+                Generate.filegenerate(dir + @"\", gen_config_file, ext, action, name, genFlag);  //Nov 15 function
                 kreatelog("in new config check + " + dir + @"\" + " configl file " + gen_config_file + ext + name + " flag " + genFlag);
             }
         }
@@ -1608,6 +1628,11 @@ namespace KreateWebsites
                             case 3:
                                 name = name.Replace(' ', '_');
                                 sw.WriteLine(name);
+                                break;
+                            /* 2024 generate .count file   */
+                            case 7:
+                                string count = "1";
+                                sw.WriteLine(count);
                                 break;
 
                             case 31:
@@ -1679,7 +1704,7 @@ namespace KreateWebsites
                     name = GetNameFromUrl(name);
 
                     string filename = dir + name + ext;
-                    kreatelog("new gen name filename  " + filename);
+                    kreatelog("new gen name filename  " + filename + " ," + action);
                     using (StreamWriter sw = File.CreateText(filename))
                     {
 
@@ -1703,6 +1728,11 @@ namespace KreateWebsites
                                 name = name.Replace(' ', '_');
                                 sw.WriteLine(name);
                                 break;
+                            /* 2024 generate .count file   */
+                            case 7:
+                                string count = "1";
+                                sw.WriteLine(count);
+                                break;
 
                             case 31:
                                 name = name.Replace('_', ' ');
@@ -1723,6 +1753,7 @@ namespace KreateWebsites
                                 sw.WriteLine(name + @".html");
                                 break;
                             default:
+                                kreatelog("wrote default value  " + filename + " ," + action + name);
                                 sw.WriteLine(name);
                                 break;
 
