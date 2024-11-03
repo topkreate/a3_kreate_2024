@@ -10,6 +10,9 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 <%@ Register Src="~/appblock/ad300.ascx" TagName="ad300" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad728.ascx" TagName="ad728" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     
@@ -75,8 +78,9 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
                                         <br /><br />
 
 
-				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >             </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>	
+				 		<uc1:articlesbutton ID="articlesbutton" runat="server"></uc1:articlesbutton>	
+     
+    <uc1:articleslistbutton ID="articleslistbutton" runat="server"></uc1:articleslistbutton>	
                             
                                 <asp:Datalist ID="RepComments" runat="server"  RepeatColumns="1" RepeatDirection="Horizontal"  >
 <HeaderTemplate>

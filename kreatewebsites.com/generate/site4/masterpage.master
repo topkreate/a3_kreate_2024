@@ -13,7 +13,7 @@
 		<meta name="keywords" content="" />
          <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 		
-    
+    <link rel="icon" href="https://storage.googleapis.com/create-images/logos/dataknobs-logo-2.jpg" sizes="32x32" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:700" rel="stylesheet" />
 		<script src="https://pictures.kreatewebsites.com/site4/js/jquery-1.8.3.min.js"></script>
 		<script src="https://pictures.kreatewebsites.com/site4/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none&amp;mobileUI.titleBarOverlaid=1"></script>

@@ -12,7 +12,7 @@
 <%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html lang="en">
 	<head id="head1" runat="server">
 		<!-- ad code -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9804321536688475"
@@ -27,21 +27,39 @@
          <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 		<link rel="icon" href="https://storage.googleapis.com/json_articles/dataknobs-logo-2.jpg">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
-		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/js/jquery-1.8.3.min.js"></script>
-		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
-		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/js/jquery.dropotron-1.2.js"></script>
-		<script src="https://pictures.kreatewebsites.com/sites/site-6/site6-1/js/init.js"></script>
+
+<!--
+		<script src="https://pictures.kreatewebsites.com/site-6/site6-1/js/jquery-1.8.3.min.js"></script>
+		<script src="https://pictures.kreatewebsites.com/site-6/site6-1/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+		<script src="https://pictures.kreatewebsites.com/site-6/site6-1/js/jquery.dropotron-1.2.js"></script>
+		<script src="https://pictures.kreatewebsites.com/site-6/site6-1/js/init.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core.css" />
-			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core-desktop.css" />
-			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core-1200px.css" />
-			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/5grid/core-noscript.css" />
-			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/style.css" />
-			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/style-desktop.css" />
+		
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/5grid/core.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/5grid/core-desktop.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/5grid/core-1200px.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/5grid/core-noscript.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/style.css" />
+			<link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/style-desktop.css" />
+		
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 7]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/site6-1/css/ie7.css" /><![endif]-->
+	-->
+			<script src="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/js/jquery-1.8.3.min.js"></script>
+	<script src="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+	<script src="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/js/jquery.dropotron-1.2.js"></script>
+	<script src="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/css/5grid/core.css" />
+		<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/css/5grid/core-desktop.css" />
+		<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/css/5grid/core-1200px.css" />
+		<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/css/5grid/core-noscript.css" />
+		<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/css/style.css" />
+		<link rel="stylesheet" href="https://pictures.kreatewebsites.com/sites/site-6/dataknobs/css/style-desktop.css" />
+	</noscript>
+
+		<!--[if lte IE 9]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="https://pictures.kreatewebsites.com/site-6/site6-1/css/ie7.css" /><![endif]-->
 
 
 
@@ -89,15 +107,22 @@
 			
 		</div>
 
-		<div id="main-wrapper">
-				<div class="main-wrapper-style2">
-					<div class="inner">
-						<div class="5grid-layout">
-							<div class="row">
-								<div class="8u">
+		<div id="main-wrapper">
+
+				<div class="main-wrapper-style2">
+
+					<div class="inner">
+
+						<div class="5grid-layout">
+
+							<div class="row">
+
+								<div class="8u">
+
 									<div id="content mobileUI-main-content">
 
-										<article>
+										<article>
+
 												
 													<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 
@@ -120,49 +145,103 @@
 										</article>
 								</div>
 								</div>  <!-- 8 u -->
-								<div class="4u">
-									<div id="sidebar">
-
-										<!-- Sidebar -->
-									
-											<section>
-												<header class="major">
-													<h2>Topics</h2>												
-												</header>
-												<p></p>												<ul class="style2">													<uc1:articles ID="Articles" runat="server"></uc1:articles>																																						</ul>
-												<footer>													<!--
-													<a href="#" class="button button-icon button-icon-info">Recommended link</a>													-->
-												</footer>
-											</section>
-											<section>
-												<header class="major">
-													<h2>Related Links</h2>
-												</header>
-												<ul class="style2">													 <uc1:articlesub ID="Articlesub1" runat="server"></uc1:articlesub>														 
-												</ul>
-												<footer>
+								<div class="4u">
+
+									<div id="sidebar">
+
+
+
+										<!-- Sidebar -->
+
+									
+
+											<section>
+
+												<header class="major">
+
+													<h2>Topics</h2>
+												
+
+												</header>
+
+												<p></p>
+												<ul class="style2">
+													<uc1:articles ID="Articles" runat="server"></uc1:articles>
+													
+													
+												</ul>
+
+												<footer>
 													<!--
-													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>													-->
-												</footer>
-											</section>
-											<section>
-												<header class="major">
-													<h2>Main Links</h2>
-												</header>
-												<ul class="style2">
-													 <uc1:articleshome ID="Articleshome2" runat="server"></uc1:articleshome>													 
-												</ul>
-												<footer>
+													<a href="#" class="button button-icon button-icon-info">Recommended link</a>
+													-->
+
+												</footer>
+
+											</section>
+
+											<section>
+
+												<header class="major">
+
+													<h2>Related Links</h2>
+
+												</header>
+
+												<ul class="style2">
+
+													 <uc1:articlesub ID="Articlesub1" runat="server"></uc1:articlesub>	
+													 
+
+												</ul>
+
+												<footer>
+
 													<!--
-													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>													-->
-												</footer>
-											</section>
-								
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>
+													-->
+
+												</footer>
+
+											</section>
+
+											<section>
+
+												<header class="major">
+
+													<h2>Main Links</h2>
+
+												</header>
+
+												<ul class="style2">
+
+													 <uc1:articleshome ID="Articleshome2" runat="server"></uc1:articleshome>
+													 
+
+												</ul>
+
+												<footer>
+
+													<!--
+													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>
+													-->
+
+												</footer>
+
+											</section>
+
+								
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
 				</div>
 
 		</div>

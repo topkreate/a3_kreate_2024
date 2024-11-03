@@ -11,6 +11,9 @@
 <%@ Register Src="~/appblock/ad300.ascx" TagName="ad300" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad728.ascx" TagName="ad728" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 	   
@@ -34,7 +37,7 @@
 
 									<p><asp:Label ID="labeltext" runat="server"></asp:Label></p>
 										
-                          <asp:Hyperlink ID="hyperEmail" runat="server"></asp:Hyperlink>
+                          <asp:Hyperlink ID="hyperEmail" class="button" runat="server"></asp:Hyperlink>
 
                             <uc1:facebook ID="facebook" runat="server"></uc1:facebook>
                             <br /><br />
@@ -86,8 +89,9 @@ Message: <textarea rows="5" cols="20" wrap="physical" name="Message">
        <uc1:ad728 ID="ad728" runat="server"></uc1:ad728>
                                         <br /><br />
 
-				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >             </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>												
+						<uc1:articlesbutton ID="articlesbutton" runat="server"></uc1:articlesbutton>	
+     
+    <uc1:articleslistbutton ID="articleslistbutton" runat="server"></uc1:articleslistbutton>											
 															</article>
 								</div>
 

@@ -12,7 +12,7 @@
 <%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html lang="en">
 	<head id="head1" runat="server">
 		<title>Kreate Websites</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -84,64 +84,124 @@
 			
 		</div>
 
-		<div id="main-wrapper">
-				<div class="main-wrapper-style2">
-					<div class="inner">
-						<div class="5grid-layout">
-							<div class="row">
-								<div class="8u">
+		<div id="main-wrapper">
+
+				<div class="main-wrapper-style2">
+
+					<div class="inner">
+
+						<div class="5grid-layout">
+
+							<div class="row">
+
+								<div class="8u">
+
 									<div id="content mobileUI-main-content">
 
-										<article>
+										<article>
+
 												
 													<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 
 										</article>
 									</div>
 								</div>  <!-- 8 u -->
-								<div class="4u">
-									<div id="sidebar">
-
-										<!-- Sidebar -->
-									
-											<section>
-												<header class="major">
-													<h2>Topics</h2>
-												</header>
-												<p></p>												<ul class="style2">													<uc1:articles ID="Articles" runat="server"></uc1:articles>																																						</ul>
-												<footer>													<!--
-													<a href="#" class="button button-icon button-icon-info">Recommended link</a>													-->
-												</footer>
-											</section>
-											<section>
-												<header class="major">
-													<h2>Related Links</h2>
-												</header>
-												<ul class="style2">													 <uc1:articlesub ID="Articlesub1" runat="server"></uc1:articlesub>														 
-												</ul>
-												<footer>
+								<div class="4u">
+
+									<div id="sidebar">
+
+
+
+										<!-- Sidebar -->
+
+									
+
+											<section>
+
+												<header class="major">
+
+													<h2>Topics</h2>
+
+												</header>
+
+												<p></p>
+												<ul class="style2">
+													<uc1:articles ID="Articles" runat="server"></uc1:articles>
+													
+													
+												</ul>
+
+												<footer>
 													<!--
-													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>													-->
-												</footer>
-											</section>
-											<section>
-												<header class="major">
-													<h2>Main Links</h2>
-												</header>
-												<ul class="style2">
-													 <uc1:articleshome ID="Articleshome2" runat="server"></uc1:articleshome>													 
-												</ul>
-												<footer>
+													<a href="#" class="button button-icon button-icon-info">Recommended link</a>
+													-->
+
+												</footer>
+
+											</section>
+
+											<section>
+
+												<header class="major">
+
+													<h2>Related Links</h2>
+
+												</header>
+
+												<ul class="style2">
+
+													 <uc1:articlesub ID="Articlesub1" runat="server"></uc1:articlesub>	
+													 
+
+												</ul>
+
+												<footer>
+
 													<!--
-													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>													-->
-												</footer>
-											</section>
-								
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>
+													-->
+
+												</footer>
+
+											</section>
+
+											<section>
+
+												<header class="major">
+
+													<h2>Main Links</h2>
+
+												</header>
+
+												<ul class="style2">
+
+													 <uc1:articleshome ID="Articleshome2" runat="server"></uc1:articleshome>
+													 
+
+												</ul>
+
+												<footer>
+
+													<!--
+													<a href="#" class="button button-icon button-icon-rarrow">Home Button</a>
+													-->
+
+												</footer>
+
+											</section>
+
+								
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
 				</div>
 
 		</div>

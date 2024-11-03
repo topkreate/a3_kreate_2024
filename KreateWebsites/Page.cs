@@ -14,6 +14,7 @@ using System.Collections.Generic;
 
 using System.Net;
 using System.IO;
+using System.Data.Linq;
 
 
 namespace KreateWebsites
@@ -235,24 +236,29 @@ namespace KreateWebsites
             string articlefile;
 
             articlefile = url;
-            articlefile = articlefile.Replace(".jpg", ".link");
-            articlefile = articlefile.Replace(".jpeg", ".link");
-            articlefile = articlefile.Replace(".png", ".link");
-            articlefile = articlefile.Replace(".htm", ".link");
-            articlefile = articlefile.Replace(".txt", ".link"); 
-            articlefile = articlefile.Replace(".aspx", ".link");
-            articlefile = articlefile.Replace(".JPG", ".link");
-            articlefile = articlefile.Replace(".JPEG", ".link");
-            articlefile = articlefile.Replace(".PNG", ".link");
-            articlefile = articlefile.Replace(".HTM", ".link");
-            articlefile = articlefile.Replace(".TXT", ".link");
-            articlefile = articlefile.Replace(".ASPX", ".link");
-            articlefile = articlefile.Replace(".imagelist", ".link");
-            articlefile = articlefile.Replace(".list", ".link");
-            articlefile = articlefile.Replace(".title", ".link");
-            articlefile = articlefile.Replace(".comments", ".link");
-            articlefile = articlefile.Replace(".articlelist", ".link");
-            articlefile = articlefile.Replace(".articleslist", ".link");
+            /* Jul 2024 added if condition*/
+            if (articlefile != null)
+            {
+                articlefile = articlefile.Replace(".jpg", ".link");
+                articlefile = articlefile.Replace(".jpeg", ".link");
+                articlefile = articlefile.Replace(".png", ".link");
+                articlefile = articlefile.Replace(".htm", ".link");
+                articlefile = articlefile.Replace(".txt", ".link");
+                articlefile = articlefile.Replace(".aspx", ".link");
+                articlefile = articlefile.Replace(".JPG", ".link");
+                articlefile = articlefile.Replace(".JPEG", ".link");
+                articlefile = articlefile.Replace(".PNG", ".link");
+                articlefile = articlefile.Replace(".HTM", ".link");
+                articlefile = articlefile.Replace(".TXT", ".link");
+                articlefile = articlefile.Replace(".ASPX", ".link");
+                articlefile = articlefile.Replace(".imagelist", ".link");
+                articlefile = articlefile.Replace(".list", ".link");
+                articlefile = articlefile.Replace(".title", ".link");
+                articlefile = articlefile.Replace(".comments", ".link");
+                articlefile = articlefile.Replace(".articlelist", ".link");
+                articlefile = articlefile.Replace(".articleslist", ".link");
+
+            }
 
 
 

@@ -613,9 +613,11 @@ static string _Keyword = "Karwa Choth";
              _url = value;
          }
      }
+     // Jun 2024
 
+     // public static string photoviewer = @"photoviewer.php";
 
-  public static string photoviewer = @"photoviewer.php";
+     public static string photoviewer = "image.html";
  
 
 

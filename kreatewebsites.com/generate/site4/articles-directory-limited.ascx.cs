@@ -46,7 +46,7 @@ public partial class Default : System.Web.UI.UserControl
        
        
             
-            dt = KreateWebsites.Page.GetDirectoryLinks(Request.QueryString["output_path"], LocalPath.ComputerPath, Global.Siteurl,5);
+            dt = KreateWebsites.Page.GetDirectoryLinks(Request.QueryString["output_path"], LocalPath.ComputerPath, Global.Siteurl);
 
             if (dt.Rows.Count > 0)
             {

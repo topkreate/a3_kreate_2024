@@ -52,7 +52,7 @@ public partial class Default : System.Web.UI.UserControl
         //  dt = KreateWebsites.Page.GetArticleLinks(inputdir, LocalPath.ComputerPath, Global.Siteurl);
         KreateWebsites.Generate.kreatelog("before article list directory = " + inputdir + "," + LocalPath.ComputerPath + "," + Global.Siteurl);
 
-        dt = KreateWebsites.Page.GetDirectoryLinks(inputdir, LocalPath.ComputerPath, Global.Siteurl);
+        dt = KreateWebsites.Page.GetDirectoryLinks(inputdir, LocalPath.ComputerPath, Global.Siteurl, 5);
 
         if (dt.Rows.Count > 0)
         {

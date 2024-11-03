@@ -1,6 +1,4 @@
 ﻿
-
-
 <%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterpage2023.master.cs" Inherits="Master" %>
 <%@ Register Src="articles-directory.ascx" TagName="articlesdirectory" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_root.ascx" TagName="facebook_root" TagPrefix="uc1" %>
@@ -9,12 +7,15 @@
 <%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
 <%@ Register Src="articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
 <%@ Register Src="articles-sub-directory.ascx" TagName="articlesub" TagPrefix="uc1" %>
-
+<%@ Register Src="articles-list2.ascx" TagName="articles2" TagPrefix="uc1" %>
 <%@ Register Src="articles-directory-limited.ascx" TagName="articlesdirectorylimited" TagPrefix="uc1" %>
-<%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad300.ascx" TagName="ad300" TagPrefix="uc1" %>
 
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html lang="en">
 	<head id="head1" runat="server">
 		<title>Kreate Websites</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -83,7 +84,14 @@
 					<article class="last">
 						<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
 
-					</article>
+					</article>					<!-- below are show at bottom of page -->
+						<uc1:articlesbutton ID="articlesbutton" runat="server"></uc1:articlesbutton>	
+ <br /><br />
+						<uc1:articleslistbutton ID="articleslistbutton" runat="server"></uc1:articleslistbutton>	
+					<br /> 
+
+					<!-- no need to use it if there is sidebar  
+					<uc1:articles2 ID="articles2" runat="server"></uc1:articles2>	-->
 				</div>
 
 			</div>
@@ -93,10 +101,10 @@
 
 					<section>
 					<h3></h3>
-						<p></p>
-						<footer>
-							
-							<a href="~/" class="button button-icon button-icon-info">Home Page</a>
+						<p><uc1:ad300 ID="ad300" runat="server"></uc1:ad300></p>
+						<footer>
+     <!-- horizontal button should not be shown 
+								<uc1:articlesbutton ID="articlesbutton2" runat="server"></uc1:articlesbutton>	-->
 						</footer>
 					</section>					<section>
 					<h3>Links</h3>

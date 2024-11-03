@@ -49,7 +49,7 @@ public partial class Default : System.Web.UI.UserControl
 
         DataTable dt;
 
-        KreateWebsites.Generate.kreatelog("before article list = " + inputdir + "," + LocalPath.ComputerPath + "," + Global.Siteurl);
+        KreateWebsites.Generate.kreatelog("before article list articlelinks = " + inputdir + "," + LocalPath.ComputerPath + "," + Global.Siteurl);
         dt = KreateWebsites.Page.GetArticleLinks(inputdir, LocalPath.ComputerPath, Global.Siteurl,10,30); // 10 item max 20 char
        //dt = KreateWebsites.Page.GetDirectoryLinks(inputdir, LocalPath.ComputerPath, Global.Siteurl);
 

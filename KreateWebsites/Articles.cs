@@ -170,6 +170,7 @@ namespace KreateWebsites
             string navigateurl = null;
 
             bool articles_individualpage = Common.Articles.individualpage;
+            /* Jun 2024 - potential error check this . do we need articles.individualpage. is it for pictures */
             if (File.Exists(inputdir + @"\articles.individualpage"))
             {
                 string individualpage = System.IO.File.ReadAllText(inputdir + @"\articles.individualpage");
@@ -262,6 +263,7 @@ namespace KreateWebsites
 
             //  This read pictures.list. You can specify picture filename in this file.
 
+            /* Jun 2024 potential error - articles.articleslist */
             Generate.kreatelog("Before articleslist"); 
             if (File.Exists(inputdir + @"\articles.articleslist"))
             {
@@ -286,9 +288,9 @@ namespace KreateWebsites
                     thumbnailurl = ImagePath + thumbnail_path + url;
                     imagefullurl = ImagePath + url;
                     */
-                    //     GetImageFullUrl(ImagePath, url, thumbnail_path, ref imagefullurl, ref thumbnailurl); // test
-                    //   GetSlideAttributes(inputdir, name, ref text);
-                    displayname = name;
+            //     GetImageFullUrl(ImagePath, url, thumbnail_path, ref imagefullurl, ref thumbnailurl); // test
+            //   GetSlideAttributes(inputdir, name, ref text);
+            displayname = name;
                     // not needed GetPictureAttributes(inputdir, name, ref text, ref displayname);
                     ReadText(url, ref text, 3);  //July 2, 2016
                 //    Generate.kreatelog("ReadTXT " + url + " text " + text );
@@ -447,8 +449,11 @@ namespace KreateWebsites
                catch (Exception e)
                {
                    // Let the user know what went wrong.
-                   Generate.kreatelog("The file could not be read:");
-                   Generate.kreatelog(e.Message);
+                   /* Jun 2024 */
+                   // Generate.kreatelog("The file could not be read:");
+                   string error_msg = "The file could not be read 1:" + listfile;
+                   Generate.kreatelog(error_msg);
+                    Generate.kreatelog(e.Message);
                }  //catch
                finally
                {
@@ -582,8 +587,11 @@ namespace KreateWebsites
                catch (Exception e)
                {
                    // Let the user know what went wrong.
-                   Generate.kreatelog("The file could not be read:");
-                   Generate.kreatelog(e.Message);
+                   /* Jun 2024 */
+                   // Generate.kreatelog("The file could not be read:");
+                   string error_msg = "The file could not be read 2:" + filename;
+                   Generate.kreatelog(error_msg);
+                    Generate.kreatelog(e.Message);
                }  //catch
                finally
                {
@@ -691,6 +699,7 @@ namespace KreateWebsites
                                 displayname = name;
 
                                 //   ReadText(url, ref text); working
+                                  //Jun 2024 potential error here - if file is not found - read ext will fail.
                                 ReadText(url, ref text, 3);  //July 2 , 2016. added level
                             //    ReadText(url, ref text);  // July 25  // this write path c:\e\
                                 string navigatename = displayname;
@@ -726,14 +735,21 @@ namespace KreateWebsites
                 catch (Exception e)
                 {
                     // Let the user know what went wrong.
-                    Generate.kreatelog("The file could not be read:");
+                    /* Jun 2024 */
+                    //  Generate.kreatelog("The file could not be read:");
+                    string error_msg = "The file could not be read 3x:" + filename;
+                    Generate.kreatelog(error_msg);
                     Generate.kreatelog(e.Message);
+                    //2024 
+                    
                 }  //catch
+                // Jun 2024 commenting it to continue
+                /*
                 finally
                 {
                     file.Close();
                 }
-
+                */
 
 
 
@@ -915,7 +931,10 @@ namespace KreateWebsites
                 catch (Exception e)
                 {
                     // Let the user know what went wrong.
-                    Generate.kreatelog("The file could not be read:");
+                    // Generate.kreatelog("The file could not be read :");
+                    // Jun 2024
+                    string error_msg = "The file could not be read 4:" + filename;
+                    Generate.kreatelog(error_msg);
                     Generate.kreatelog(e.Message);
                 }  //catch
                 finally
@@ -1037,9 +1056,12 @@ namespace KreateWebsites
                 } // try
                 catch (Exception e)
                 {
-                    // Let the user know what went wrong.
-                    Generate.kreatelog("The file could not be read:");
-                    Generate.kreatelog(e.Message);
+                // Let the user know what went wrong.
+                /* Jun 2024 */
+                // Generate.kreatelog("The file could not be read:");
+                string error_msg = "The file could not be read 5:" + file;
+                Generate.kreatelog(error_msg);
+                Generate.kreatelog(e.Message);
                 }  //catch
                 finally
                 {
@@ -1276,39 +1298,51 @@ namespace KreateWebsites
         {
            
             string articlesRoot = @"C:\e\";
-            System.IO.StreamReader file =
+            /* Jun 2024 , Potential error  Added if condition */ 
+            if (File.Exists(path))
+            { 
+                System.IO.StreamReader file =
                   new System.IO.StreamReader(path);
-            try
-            {
 
-                while ((url = file.ReadLine()) != null)  // July 14b
-                {
-                    // url = file.ReadLine();
-                    KreateWebsites.Generate.kreatelog2("url in ReadText = " + url);
-                   // KreateWebsites.Generate.kreatelog("url in ReadText = " + url);
-                    if (String.Compare(url, 0, articlesRoot, 0, 5, new CultureInfo("en-US"), CompareOptions.IgnoreCase) == 0)
+                Generate.kreatelog("3x inf if" + path);
+                try
                     {
-                        KreateWebsites.Generate.kreatelog2("url is = " + url);
-                        //  ReadText(url, ref text);  
-                        ReadText(url, ref text, 3); // July 14-15
+                             /* jun 2024 potential error - is file defined */
+                            while ((url = file.ReadLine()) != null)  // July 14b
+                            {
+                                // url = file.ReadLine();
+                                KreateWebsites.Generate.kreatelog2("url in ReadText = " + url);
+                                // KreateWebsites.Generate.kreatelog("url in ReadText = " + url);
+                                if (String.Compare(url, 0, articlesRoot, 0, 5, new CultureInfo("en-US"), CompareOptions.IgnoreCase) == 0)
+                                {
+                                    KreateWebsites.Generate.kreatelog2("3x url is = " + url);
+                                    //  ReadText(url, ref text);  
+                                    ReadText(url, ref text, 3); // July 14-15
+                                }
+                                else
+                                {
+                                    ReadText(path, ref text);  // Read from path passed above
+                                    text = System.IO.File.ReadAllText(path);
+
+
+                                }
+                            }  // july 14 b - created while loop. earlier only first line was read.
+                
                     }
-                    else
+                    catch
                     {
-                        ReadText(path, ref text);  // Read from path passed above
-                        text = System.IO.File.ReadAllText(path);
-
-
+                        KreateWebsites.Generate.kreatelog("ReadText 3 catch " + path);
+                        text = null;
                     }
-                }  // july 14 b - created while loop. earlier only first line was read.
-            }
-            catch
+                    finally
+                    {
+                        file.Close();  // July 14 , file is locked by iisexpress. release it
+                    }
+            } // Jun 2024 if condition
+            else
             {
-                KreateWebsites.Generate.kreatelog("ReadText 3 catch " + path);
                 text = null;
-            }
-            finally
-            {
-                file.Close();  // July 14 , file is locked by iisexpress. release it
+                Generate.kreatelog("3x returning null" + path); 
             }
             /*  Later do for multi line  
             while ((url = file.ReadLine()) != null)
@@ -1326,7 +1360,9 @@ namespace KreateWebsites
 
                 }
 
+
             }
+
             */
             //  ReadText(path, ref text); // fix above and remove this line
         }
@@ -1349,6 +1385,12 @@ namespace KreateWebsites
                    // text = null;
                 }
 
+
+            }
+            /* Jun 2024  , added else condition potential error */
+            else
+            {
+                text = null;
 
             }
 

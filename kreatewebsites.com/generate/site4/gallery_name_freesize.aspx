@@ -29,7 +29,7 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 										<nav id="nav" class="mobileUI-site-nav">
 											<ul>
 								
-                    <uc1:articlesd ID="articlesdir" runat="server"></uc1:articlesd>
+                    <uc1:articlesdir ID="articlesdir" runat="server"></uc1:articlesdir>
                                                
 											</ul>
 										</nav>

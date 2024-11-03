@@ -233,6 +233,17 @@ public partial class Generate : BasePage
 
                          }
 
+                        /* Aug 2024 */
+                        if (File.Exists(LocalPath.InputPath + @"\sitename.txt"))
+                        {
+                            string str = System.IO.File.ReadAllText(LocalPath.InputPath + @"\sitename.txt");
+
+                            Global.Sitename = str.TrimEnd('\r', '\n');
+
+
+                        }
+                        /* Addition end */
+
                          Response.Write("variables : " + url + "," +  LocalPath.InputPath);
                   
                          string themepath = @"generate/" + theme + @"/"; ;

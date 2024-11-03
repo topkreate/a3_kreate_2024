@@ -12,7 +12,7 @@
 <%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html lang="en">
 	<head id="head1" runat="server">
 		<title>Kreate Websites</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -99,134 +99,96 @@
             border-radius: 10px !important;
         }
     </style>
+
+     <style>
+    .hero-header{
+         background: linear-gradient(to right top, #2a2a2a, #242426, #1e1e22, #17191f, #10131b, #10151d, #10171e, #101920, #192328, #232c2f, #2d3637, #394040);;
+    }
+    </style>
 </head>
   
 	<body>
-<!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
 
-  <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Washington, USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+1</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@kreatewebsites.com</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/UsCityTrip/"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/abexperiment/"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
+
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Threadnine Blog</h1>
-                <!-- <img src="img/logo.png" alt="Logo"> -->
+                <h3 class="text-primary m-0">Portfolio</h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <!-- <a href="https://www.usacitytrip.com/" class="nav-item nav-link active">Home</a> -->
-                    <asp:HyperLink ID="hyperlinkHome" class="nav-item nav-link active" runat="server" ></asp:HyperLink>
-                    <a href="https://blog.threadnine.com/summer/" class="nav-item nav-link">Summer</a>
-                    <a href="https://blog.threadnine.com/winter/" class="nav-item nav-link">Winter</a>
-                    <a href="https://www.usacitytrip.com/lifestyle/" class="nav-item nav-link">Design Tips</a>
-                    <div class="nav-item dropdown">
-                        <a href="https://blog.threadnine.com/lifestyle/" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Bedroom</a>
-                        
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="#skills" class="nav-item nav-link">Skills</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#certifications" class="nav-item nav-link">Certifications</a>
+                    <a href="#publications" class="nav-item nav-link">Publications</a>
+                    <a href="#achievements" class="nav-item nav-link">Achievements</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>
+                <a href="#contact" class="btn btn-primary rounded-pill py-2 px-4" >Contact</a>
             </div>
         </nav>
 
-        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+      
+        <div class="container-fluid bg-primary py-5 hero-header">
+            <!--
             <div class="container py-5">
                 <div class="row justify-content-center py-5">
+                   
                     <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown">Flash Sale</h1>
-                        <p class="fs-4 text-white mb-4 animated slideInDown">UP TO 15% OFF</p>
-                        <div class="position-relative w-75 mx-auto animated slideInDown">
-                            <!--
-                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Bedroom">
-                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
-                            -->
-                            <div class="gcse-searchbox"></div>
-                        </div>
+                          
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Prashant Dhingra</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Author of Generative AI Finance paper. Building Data Products using Generative AI, AI, knobs at DataKnobs, Ex-Microsoft, Google, JP Morgan Chase. Redmond, Washington, United States.</p>
+                             
+
                     </div>
                 </div>
             </div>
         </div>
+            --->
+        
     </div>
-    <!-- Navbar & Hero End -->
-         
- <div class="bg-light">
-        <div class="search-results container">
-            <div class="gcse-searchresults"></div>
-        </div>
- </div>
-<div class="container-xxl py-5">
-        <div class="container">		
-										
-										<!--	<h1> <asp:HyperLink ID="topheader" runat="server" class="mobileUI-site-name"></asp:HyperLink></h1> -->
-										
 
 										        
 		
 
-		
-
+	   <div class="container-xxl py-5">
+        <div class="container">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
             <br />
             <br />
-             <uc1:articleshome ID="articleshome" runat="server"></uc1:articleshome>
-
-         </div>
-</div>		
-
+            </div>
+          </div>
+             <!-- <uc1:articleshome ID="articleshome" runat="server"></uc1:articleshome> -->
 
 		<!-- Footer Wrapper -->
    <!-- Footer Start -->
+        <!--
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Most popular</h4>
-                    <a class="btn btn-link" href="https://blog.threadnince.com/percale-vs-sateen.html">Select Perfect Sheets</a>
                 
+                    <uc1:articleshome ID="articleshome2" runat="server"></uc1:articleshome>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Comforter</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Select the perfect comforter</p>
+                    <h4 class="text-white mb-3">Links</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Importan Links</p>
                      <uc1:articlesub ID="articlessub" runat="server"></uc1:articlesub>
-                    <!--
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.usacitytrip.com</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@usacitytrip.com</p>
-                    -->
+
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://www.twitter.com/usacitytrip/"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/uscitytrip/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.twitter.com/dataknobs/"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/dataknobs/"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/dataknobs/"><i class="fab fa-linkedin-in"></i></a>
                         
@@ -284,6 +246,9 @@
             </div>
         </div>
     </div>
+        -->
+
+        <uc1:footer ID="footer" runat="server"></uc1:footer>	
     <!-- Footer End -->
 
     <!-- Back to Top -->

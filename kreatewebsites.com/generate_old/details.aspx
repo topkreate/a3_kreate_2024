@@ -3,7 +3,7 @@
 <%@ Register Src="articles-directory.ascx" TagName="articles" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad728.ascx" TagName="ad728" TagPrefix="uc1" %>
 <%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
-<html>
+<html lang="en">
 	<head runat="server">
 		<title></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />

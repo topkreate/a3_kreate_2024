@@ -1,0 +1,141 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/masterpage2024.master.cs" Inherits="Master" %>
+
+<%@ Register Src="../site1/articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+<%@ Register Src="../site1/articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
+<%@ Register Src="../site1/articles-sub-directory.ascx" TagName="articlesub" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory.ascx" TagName="articlesdirectory" TagPrefix="uc1" %>
+<%@ Register Src="hor-navigation.ascx" TagName="articlesd" TagPrefix="uc1" %>
+<%@ Register Src="hor-navigation-home.ascx" TagName="articlesdhome" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
+
+
+<%@ Register Src="header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site1/header2.ascx" TagName="header2" TagPrefix="uc1" %>
+<%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+   <head id="head1" runat="server">
+   <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder> 
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <title>Tax Income Blog - Unofficial Blog and Guide</title>
+  
+  <meta
+  name="description"
+  content="Unofficial Blog for Tax - Dive into the world of taxes with our community-driven blog. Get practical advice, share your experiences, and stay informed about the latest tax news and trends. Our blog is written by people just like you, offering a relatable and informative perspective on all things tax-related."
+/>
+  <meta
+    name="keywords"
+    content="unoffical blog, tax guide, tax, tax bblog, community tips, practical advice, tax trends"
+  />
+  <link
+    rel="icon"
+    href="https://storage.googleapis.com/layout.kreatewebsites.com/atlas/img/favicon.png"
+    sizes="32x32"
+    type="image/png"
+  />
+  <link
+    rel="stylesheet"
+    href="https://storage.googleapis.com/layout.kreatewebsites.com/atlas/css/custom.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://storage.googleapis.com/layout.kreatewebsites.com/atlas/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://storage.googleapis.com/layout.kreatewebsites.com/atlas/font-awesome-4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://storage.googleapis.com/layout.kreatewebsites.com/atlas/css/aos.css"
+  />
+</head>
+
+ 
+
+<body>
+    <sections>
+<div
+  class="jumbotron jumbotron-fluid"
+  id="banner"
+  style="
+    background-image: url(https://storage.googleapis.com/layout.kreatewebsites.com/atlas/img/banner-bk.jpg);
+  "
+>
+  <div class="container text-center text-md-left">
+    <header>
+      <div class="row justify-content-between">
+        <div class="col-2">
+          <img
+            src="https://storage.googleapis.com/layout.kreatewebsites.com/atlas/img/logo.png"
+            alt="logo"
+          />
+            <asp:HyperLink ID="topheader" runat="server"  class="text-white lead"> </asp:HyperLink>
+        </div>
+        <div class="col-6 align-self-center text-right">
+
+            
+            <asp:HyperLink ID="hyperlinkHome" runat="server" ></asp:HyperLink>
+        </div>
+      </div>
+    </header>
+    <h1
+      data-aos="fade"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      class="display-3 text-white font-weight-bold my-5"
+    >
+      <asp:label runat="server" ID="title"></asp:label>
+
+    </h1>
+    <p
+      data-aos="fade"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      class="lead text-white my-4"
+    >
+      <asp:Label ID="metadesc" runat="server" ></asp:Label>
+    </p>
+    <a
+      href="/"
+      data-aos="fade"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      class="btn my-4 font-weight-bold atlas-cta cta-green"
+    >Start Your Journey</a>
+  </div>
+</div>
+
+
+
+<sections>
+
+    
+
+
+<sections>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderArticle" runat="server"></asp:ContentPlaceHolder>
+    
+</sections>
+
+    <uc1:footer ID="footer" runat="server"></uc1:footer>
+
+
+
+          <script src="https://storage.googleapis.com/layout.kreatewebsites.com/atlas/js/aos.js"></script>
+  <script>
+      AOS.init({});
+  </script>
+</body>
+
+  
+
+</html>

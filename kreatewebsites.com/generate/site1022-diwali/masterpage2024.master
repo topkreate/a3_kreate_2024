@@ -1,0 +1,326 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterpage2024.master.cs" Inherits="Master" %>
+
+
+<%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory.ascx" TagName="articlesub" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory.ascx" TagName="articlesdirectory" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited.ascx" TagName="articlesdirectorylimited" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_root.ascx" TagName="facebook_root" TagPrefix="uc1" %>
+<%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<!DOCTYPE html>
+<html lang="en">
+	<head id="head1" runat="server">
+		<title>Kreate Websites</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+              		
+
+         <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+		
+    <!-- Favicon -->
+    <!-- <link href="https://storage.googleapis.com/kreatewebsite/site102-brown/img/favicon.ico" rel="icon">  -->
+    <link  href="https://storage.googleapis.com/create-images/logos/dataknobs-logo-2.jpg" sizes="32x32" type="image/png"  rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsite/site102-brown/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsite/site102-brown/css/style.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <style>
+        .gsc-input {
+            padding: 0px 10px !important;
+            border-radius: 50px;
+            background-color: #f2f2f2;
+        }
+
+        .gsc-search-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 100px;
+            padding: 6px 8px;
+            cursor: pointer;
+        }
+
+        .gsc-search-button button {
+            background-color: transparent;
+        }
+
+        .gsc-search-box {
+            padding: 10px;
+            border-radius: 100px;
+            background-color: #f2f2f2;
+        }
+
+        .gsc-control-cse {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .gsc-input-box {
+            margin: 0 !important;
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .gsc-expansionArea{
+            background-color: white !important;
+        }
+
+        .gsc-result {
+            background-color: transparent !important;
+            border: none !important;
+            padding: 10px 15px 10px 15px !important;
+        }
+
+        .gsc-cursor-box {
+            background-color: white;
+            border-radius: 10px !important;
+        }
+    </style>
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXTYXCV51G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MXTYXCV51G');
+</script>
+
+        <!-- Ad  -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9804321536688475" crossorigin="anonymous"></script>
+
+</head>
+  
+	<body>
+<!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i><a href="https://www.happydiwali.org/2024/">Happy Diwali 2024</a></small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+1</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@kreatewebsites.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="" aria-label="Twitter Page"><i class="fab fa-twitter fw-normal" aria-label="Go to top of page"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/HappyDiwaliFestival/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/kreatewebsites/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/dataknobs/"><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://www.youtube.com/@kreatewebsites"><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Happy Diwali</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars">Kreate</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="https://www.happydiwali.org/" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Slide Show</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://www.happydiwali.org/posters/" class="dropdown-item">Diwali Posters</a>
+                            <a href="https://www.happydiwali.org/posters/god-posters/" class="dropdown-item">God Posters</a>
+                        </div>
+                    </div>
+                    <a href="https://www.happydiwali.org/wishes/" class="nav-item nav-link">Wishes</a>
+                    <a href="https://www.happydiwali.org/cards/" class="nav-item nav-link">Cards</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Stories</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://www.happydiwali.org/stories/ahiravan-mahiravan.html" class="dropdown-item">Ahiravan MahiRavan</a>
+                            <a href="https://www.happydiwali.org/stories/jatayu.html" class="dropdown-item">Jatahyu</a>
+                          
+                        </div>
+                    </div>
+                    <a href="https://www.happydiwali.org/wallpapers/" class="nav-item nav-link">Wallpapers</a>
+                </div>
+                    <a href="https://www.happydiwali.org/muhurat/" class="btn btn-primary rounded-pill py-2 px-4">Muhurat</a>
+                </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Wish you all a Happy Diwali</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Spread joy, light, and prosperity</p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <!-- <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Austin"> -->
+                            <div class="gcse-searchbox"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+         
+ <div class="bg-light">
+        <div class="search-results container">
+            <div class="gcse-searchresults"></div>
+        </div>
+ </div>
+<div class="container-xxl py-5">
+        <div class="container">		
+										
+										<!--	<h1> <asp:HyperLink ID="topheader" runat="server" class="mobileUI-site-name"></asp:HyperLink></h1> -->
+										
+
+										        
+		
+
+		
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            <br />
+            <br />
+             <!-- <uc1:articleshome ID="articleshome" runat="server"></uc1:articleshome> -->
+
+         </div>
+</div>		
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Diwali Season</h4>
+                					
+					<a class="btn btn-link" href="https://www.happydiwali.org/ramleela/">Ram Leela</a>
+					<a class="btn btn-link" href="https://www.happydiwali.org/festivals/ram-navami/">Ram Navami</a>
+					<a class="btn btn-link" href="https://www.happydiwali.org/festivals/karwachauth/">Karwa Chauth</a>
+					<a class="btn btn-link" href="https://www.happydiwali.org/festivals/dusshera/">Dusshera</a>
+					<a class="btn btn-link" href="https://www.happydiwali.org/decoration.html">Diwali Decorations</a>
+					<a class="btn btn-link" href="https://www.happydiwali.org/festivals/navratri/">Navratri</a>
+					
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Design by</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kreate Websites</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>www.kreatewebsites.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@kreatewebsites.com</p>
+                    <div class="d-flex pt-2">
+
+						<a class="btn btn-outline-light btn-social" href="https://twitter.com/indiacitytrip"><i class="fab fa-twitter"></i></a>
+						<a class="btn btn-outline-light btn-social" href="https://www.facebook.com/HappyDiwaliFestival"><i class="fab fa-facebook-f"></i></a>
+						<a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@kreatewebsites"><i class="fab fa-youtube"></i></a>
+						<a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/kreatewebsites/"><i class="fab fa-linkedin-in"></i></a>
+						
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Festivals</h4>
+                    <a class="btn btn-link" href="https://www.happydiwali.org/festivals/dussheera">Dusshera</a>
+                    <a class="btn btn-link" href="https://www.happydiwali.org/festivals/dhanteras/">Dhan Teras</a>
+                    <a class="btn btn-link" href="https://www.happydiwali.org/festivals/choti-diwali/">Choti Diwali</a>
+                    <a class="btn btn-link" href="https://www.happydiwali.org/festivals/goverdhan-puja/">Goverdhan Puja</a>
+                    <a class="btn btn-link" href="https://www.happydiwali.org/festivals/bhai-dooj/">Bhai Dooj</a>
+                
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">No Tracking</h4>
+                    <p>This site is designed with user privacy in mind, no user info is collected or tracked without explicit consent.  You do not need to login to use this site</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Kreate Web Sites</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="#">Home</a>
+                            <a href="https://www.happydiwali.org/stories/">Stories</a>
+                            <a href="#">Best Cities to see Diwali</a>
+                            <a href="https://www.happydiwali.org/ram-temple/">Ayodhya Ram Temple</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/wow/wow.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/easing/easing.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/waypoints/waypoints.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Google Search -->
+        <!-- usa 
+    <script async src="https://cse.google.com/cse.js?cx=014d08d10e77b477c">
+    </script> -->
+   <script async src="https://cse.google.com/cse.js?cx=d1ab11c308c4a4f26">
+   </script>
+
+    <!-- Template Javascript -->
+    <script src="https://storage.googleapis.com/kreatewebsite/site102-brown/js/main.js"></script>
+
+	</body>
+</html>

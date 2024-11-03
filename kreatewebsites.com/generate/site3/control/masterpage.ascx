@@ -8,7 +8,7 @@
 <%@ OutputCache Duration="86400" VaryByParam="None" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html>
+<html lang="en">
 	<head id="head1" runat="server">
 		<title>Cheap Websites</title>
 		 
@@ -33,10 +33,10 @@
 							<!-- Nav -->
 								<nav class="mobileUI-site-nav">
 									<a href="http://www.vancouver-bc.biz/">Homepage</a>
-									<a href="http://www.vancouver-bc.biz/webdesign.php">Web Design</a>
-									<a href="http://www.vancouver-bc.biz/prices.php">Price</a>
-									<a href="http://www.vancouver-bc.biz/portfolio.php">Our Portfolio</a>
-									<a href="http://www.vancouver-bc.biz/aboutus.php">About us</a>
+									<a href="http://www.vancouver-bc.biz/webdesign.html">Web Design</a>
+									<a href="http://www.vancouver-bc.biz/prices.html">Price</a>
+									<a href="http://www.vancouver-bc.biz/portfolio.html">Our Portfolio</a>
+									<a href="http://www.vancouver-bc.biz/aboutus.html">About us</a>
 								</nav>
 
 						</div>
@@ -52,7 +52,7 @@
 							
 								<!-- Banner Copy -->
 									<p><asp:Label ID="Labeltitle" runat="server"> </asp:Label></p>
-									<a href="http://www.vancouver-bc.biz/price.php" class="button-big">See Price!</a>
+									<a href="http://www.vancouver-bc.biz/price.html" class="button-big">See Price!</a>
 
 							</div>
 							<div class="6u">

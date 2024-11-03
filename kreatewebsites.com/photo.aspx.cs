@@ -139,6 +139,7 @@ public partial class Photo : BasePage
         if (link != null)
         {
 
+            
             labeltext.Text = labeltext.Text + link;
         }
 
@@ -292,17 +293,18 @@ public partial class Photo : BasePage
           if (File.Exists(commentsfile))
           {
 
-              labeltext.Text = labeltext.Text + System.IO.File.ReadAllText(commentsfile);
+            // Duplicate comments.  As comment is repeater too in photo. either it should bot be repeater
+            // labeltext.Text = labeltext.Text + System.IO.File.ReadAllText(commentsfile);
           }
 
           imagelinkfile = imagepath + @".link";
           if (File.Exists(imagelinkfile))
           {
+            // Duplicate comments.  As comment is repeater too in photo. either it should bot be repeater
+            labeltext.Text = labeltext.Text + System.IO.File.ReadAllText(imagelinkfile);
+        }
 
-              labeltext.Text = labeltext.Text + System.IO.File.ReadAllText(imagelinkfile);
-          }
-
-          pagelinkfile = pagepath + @".link";
+        pagelinkfile = pagepath + @".link";
           if (File.Exists(pagelinkfile))
           {
 
@@ -319,10 +321,12 @@ public partial class Photo : BasePage
 
          folderUrl = KreateWebsites.Page.GetUrl(Request.QueryString["output_path"],LocalPath.ComputerPath, Global.Siteurl, ref pageUrl, ref folderUrl);
 
+        /*
         hyperEmail.Text = "Email this Page";
         string subject = "Photo : " + Page.Title;
         string body = "Here is your Photo " + pageUrl + ". See more  at " +  folderUrl ;
         hyperEmail.NavigateUrl = "mailto:Type Email address ?Subject=" + subject + "&body=" + body;
+        */
 
 
     }

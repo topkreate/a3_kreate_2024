@@ -12,6 +12,10 @@
 <%@ Register Src="~/appblock/ad120.ascx" TagName="ad120" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_display.ascx" TagName="facebook" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-button-side.ascx" TagName="articleslistbuttonside" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
@@ -21,6 +25,7 @@
 				<div class="logo">
 					<div>
 						<h1><asp:label runat="server" ID="title"></asp:label></h1>
+						<span class="byline"><asp:label runat="server" ID="Label1"></asp:label></span>
 					</div>
 			</header>
 			
@@ -29,7 +34,8 @@
 										<nav id="nav" class="mobileUI-site-nav">
 											<ul>
 								
-                    <uc1:articlesdirectory ID="articlesdir" runat="server"></uc1:articlesdirectory>
+                 <uc1:articlesdirectory ID="articlesdir" runat="server"></uc1:articlesdirectory> 
+				<!--	<uc1:articlesdirectorylimited ID="articlesdirectorylimited" runat="server"></uc1:articlesdirectorylimited> -->
                                                
 											</ul>
 										</nav>
@@ -83,8 +89,11 @@
 							           <uc1:ad728 ID="ad728" runat="server"></uc1:ad728>
                                         <br /><br />
 
-				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >             </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>												
+														<uc1:articlesbutton ID="articlesbutton" runat="server"></uc1:articlesbutton>	
+ 
+<uc1:articleslistbutton ID="articleslistbutton" runat="server"></uc1:articleslistbutton>	
+										
+										
 															</article>
 								</div>
 
@@ -96,18 +105,24 @@
 
 									<section>
 										<h3>Links</h3>
+										<!-- 
 										<p>  
 											
 											<uc1:articlesub ID="articlessub" runat="server"></uc1:articlesub>	
 										</p>
+											-->
+											<footer>
+												 <!-- <asp:hyperlink ID="buttonMore"  runat="server" class="button button-icon button-icon-info" >             </asp:hyperlink>	-->
+												<uc1:articlessubdirectorybutton ID="articleslistbutton1" runat="server"></uc1:articlessubdirectorybutton>	
+											</footer>
 
 									</section>
 
 									<section>
-										<h3>Related Articles</h3>
+										<!-- <h3>Related Articles</h3> -->
 										<ul class="style2">
-                                            <uc1:articles ID="articles" runat="server"></uc1:articles>
-										
+                                            
+										<uc1:articles ID="articles" runat="server"></uc1:articles>
 										</ul>
 									</section>
 

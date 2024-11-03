@@ -13,6 +13,9 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 <%@ Register Src="~/appblock_facebook/facebook_comments.ascx" TagName="facebookcomments" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_embedded_posts.ascx" TagName="facebookembeddedposts" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_recommended_feed.ascx" TagName="facebook_recommended_feed" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     
@@ -119,8 +122,9 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
            <uc1:ad728 ID="ad728" runat="server"></uc1:ad728>
                                         <br /><br />
 
-				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >             </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>												
+				 		<uc1:articlesbutton ID="articlesbutton" runat="server"></uc1:articlesbutton>	
+     
+    <uc1:articleslistbutton ID="articleslistbutton" runat="server"></uc1:articleslistbutton>											
 															</article>
 								</div>
 

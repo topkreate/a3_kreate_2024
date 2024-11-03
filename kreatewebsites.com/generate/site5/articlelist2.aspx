@@ -12,6 +12,9 @@
 <%@ Register Src="~/appblock/ad120.ascx" TagName="ad120" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_display.ascx" TagName="facebook" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
@@ -66,8 +69,9 @@
 							           <uc1:ad728 ID="ad728" runat="server"></uc1:ad728>
                                         <br /><br />
 
-				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >  Read More           </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >Find out more             </asp:hyperlink>												
+						<uc1:articlesbutton ID="articlesbutton" runat="server"></uc1:articlesbutton>	
+     
+    <uc1:articleslistbutton ID="articleslistbutton" runat="server"></uc1:articleslistbutton>												
 															</article>
 								</div>
 

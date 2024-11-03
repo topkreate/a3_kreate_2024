@@ -2,7 +2,7 @@
 
 
  %>
- <html>
+ <html lang="en">
 
  <form runat="server">
 

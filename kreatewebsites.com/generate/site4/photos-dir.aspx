@@ -8,7 +8,8 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 <%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
 <%@ Register Src="articles-list2.ascx" TagName="articles2" TagPrefix="uc1" %>
 <%@ Register Src="articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
-<%@ Register Src="articles-directory.ascx" TagName="articlesdir" TagPrefix="uc1" %>
+
+<%@ Register Src="articles-directory.ascx" TagName="articlesdirectory" TagPrefix="uc1" %>
 <%@ Register Src="articles-directory-limited.ascx" TagName="articlesd" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad300.ascx" TagName="ad300" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad728.ascx" TagName="ad728" TagPrefix="uc1" %>
@@ -30,8 +31,8 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 									<!-- Nav -->
 										<nav id="nav" class="mobileUI-site-nav">
 											<ul>
-						
-                    <uc1:articlesd ID="articlesdir" runat="server"></uc1:articlesd>
+						<uc1:articlesdirectory ID="Articlesdirectory1" runat="server"></uc1:articlesdirectory> 
+                   
                                                
 											</ul>
 										</nav>

@@ -25,22 +25,32 @@ public class Util
             case 0:
 
                 Global.Gallery.photoviewer = "photoviewer.php";
+                // Jun 2024
+                Global.Gallery.photoviewer = "image.html";
                 break;
             case 1:
                 Global.Gallery.photoviewer = "picturesalbum.php";
+                // Jun 2024
+                Global.Gallery.photoviewer = "image.html";
                 break;
             case 2:
 
                 Global.Gallery.photoviewer = "imagegallery.php";
+                // Jun 2024
+                Global.Gallery.photoviewer = "image.html";
                 break;
 
             case 3:
 
                 Global.Gallery.photoviewer = "photoviewer.php";
+                // Jun 2024
+                Global.Gallery.photoviewer = "image.html";
                 break;
             default:
 
                 Global.Gallery.photoviewer = "photoviewer.php";
+                // Jun 2024
+                Global.Gallery.photoviewer = "image.html";
                 break;
         }
 

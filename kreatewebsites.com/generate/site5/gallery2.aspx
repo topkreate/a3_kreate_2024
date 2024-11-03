@@ -8,6 +8,9 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 <%@ Register Src="articles-directory-limited.ascx" TagName="articlesd" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad300.ascx" TagName="ad300" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     

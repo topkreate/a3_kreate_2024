@@ -13,10 +13,10 @@
 <%@ Register Src="~/appblock/ad728.ascx" TagName="ad728" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-	   
+		   
 	
 											
-                                             <h2><asp:label runat="server" ID="title"></asp:label></h2>
+                             <h2><asp:label runat="server" ID="title"></asp:label></h2>
 																	
 										
 										<span class="byline"> <asp:Label ID="metadesc" runat="server" ></asp:Label></span>

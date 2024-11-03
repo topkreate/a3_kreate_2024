@@ -17,7 +17,7 @@
      <header id="header">
 				<div class="logo">
 					<div>
-						<h1><asp:label runat="server" ID="Label1"></asp:label></h1>
+						<h1><asp:label runat="server" ID="title"></asp:label></h1>
 						<span class="byline"><asp:label runat="server" ID="metadesc"></asp:label></span>
 					</div>
 			</header>
@@ -43,7 +43,7 @@
 	
 							
 											
-                                             <h3><asp:label runat="server" ID="title"></asp:label></h3>
+                                             <!-- <h3><asp:label runat="server" ID="title"></asp:label></h3> -->
 											
 									
 										

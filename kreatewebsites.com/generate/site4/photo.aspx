@@ -118,7 +118,7 @@ Message: <textarea rows="5" cols="20" wrap="physical" name="Message">
 								<div id="sidebar">
 
 									<section>
-										<h3>Ads</h3>
+										<h3>More Info</h3>
 										<p>
                                             <uc1:ad300 ID="ad300" runat="server"></uc1:ad300>
 										</p>

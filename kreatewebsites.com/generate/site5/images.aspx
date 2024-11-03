@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="~/images.aspx.cs" Inherits="Photos" 
-Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="BasePage"  %>
+Title="KreateWebsites"  CodeFileBaseClass="BasePage"  %>
 
 
 
@@ -17,7 +17,13 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 <%@ Register Src="~/appblock_facebook/facebook_comments.ascx" TagName="facebookcomments" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_embedded_posts.ascx" TagName="facebookembeddedposts" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_recommended_feed.ascx" TagName="facebook_recommended_feed" TagPrefix="uc1" %>
+
 <%@ Register Src="articles-sub-directory.ascx" TagName="articlessub" TagPrefix="uc1" %>
+
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     	<div id="main-wrapper">
@@ -58,7 +64,9 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
                                                 NavigateUrl='<%#  Eval("navigateurl2")  %>'              />
                                                  </asp:hyperlink>
 
-                                                <blockquote>  <asp:Hyperlink ID="hyperlink1" runat="server"  Text='<%# Eval("displayname")  %>'  NavigateUrl='<%#  Eval("Navigateurl2") %>' /></blockquote>
+                                                <blockquote>  <asp:Hyperlink ID="hyperlink1" runat="server"  Text='<%# Eval("displayname")  %>'  NavigateUrl='<%#  Eval("Navigateurl2") %>' />
+
+                                                </blockquote>
 												 
 				
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                							
@@ -132,8 +140,9 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
            <uc1:ad728 ID="ad728" runat="server"></uc1:ad728>
                                         <br /><br />
 
-				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >             </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>												
+						<uc1:articlesbutton ID="articlesbutton" runat="server"></uc1:articlesbutton>	
+     
+    <uc1:articleslistbutton ID="articleslistbutton" runat="server"></uc1:articleslistbutton>												
 															</article>
 								</div>
 
@@ -144,10 +153,10 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 								<div id="sidebar">
 
 									<section>
-										<h3>Ads</h3>
-										<p>
-                                            <uc1:ad300 ID="ad300" runat="server"></uc1:ad300>
-										</p>
+										<!--ABC
+										<h3>Add Cards and images here</h3>
+									
+										XYZ -->
 										<footer>
                                              <asp:hyperlink ID="buttonMore"  runat="server" class="button button-icon button-icon-info" >             </asp:hyperlink>	
 											
@@ -158,7 +167,14 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 										<h3>Related Articles</h3>
 										<ul class="style2">
                                             <uc1:articles ID="articles" runat="server"></uc1:articles>
-										 <uc1:articlessub ID="articlesub" runat="server"></uc1:articlessub>
+											
+										</ul>
+									</section>
+									<section>
+										<h3>Main Topics</h3>
+										<ul class="style2">
+											
+											<uc1:articlessub ID="Articlessub1" runat="server"></uc1:articlessub>
 										</ul>
 									</section>
 

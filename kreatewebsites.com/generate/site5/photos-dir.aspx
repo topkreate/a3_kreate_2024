@@ -17,16 +17,12 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 <%@ Register Src="~/appblock_facebook/facebook_comments.ascx" TagName="facebookcomments" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_embedded_posts.ascx" TagName="facebookembeddedposts" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_recommended_feed.ascx" TagName="facebook_recommended_feed" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited-button.ascx" TagName="articlesbutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory-limited-button.ascx" TagName="articlessubdirectorybutton" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-limited-button.ascx" TagName="articleslistbutton" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    	<div id="main-wrapper">
-				<div class="5grid-layout">
-					<div class="row">
-						<div class="8u mobileUI-main-content">
 
-							<!-- Content -->
-								<div id="content">
-									<article class="last">
 											
                                              <h2><asp:label runat="server" ID="title"></asp:label></h2>
 											
@@ -40,7 +36,7 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 										
                                            
 
-							<asp:Datalist ID="RepDetails" runat="server"  RepeatColumns="4" RepeatDirection="Horizontal"  >
+<asp:Datalist ID="RepDetails" runat="server"  RepeatColumns="4" RepeatDirection="Horizontal"  >
 <HeaderTemplate>
 
 
@@ -83,7 +79,7 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
                             <br />
                             <br />
 
-                               <asp:Datalist ID="RepComments" runat="server"  RepeatColumns="1" RepeatDirection="Horizontal"  >
+<asp:Datalist ID="RepComments" runat="server"  RepeatColumns="1" RepeatDirection="Horizontal"  >
 <HeaderTemplate>
 
 
@@ -123,7 +119,7 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
                             <uc1:facebookembeddedposts ID="facebookembeddedposts" runat="server"></uc1:facebookembeddedposts>		
                               <uc1:facebook_recommended_feed ID="facebook_recommended_feed" runat="server"></uc1:facebook_recommended_feed>		
                             -->
-     <uc1:articles2 ID="articles2" runat="server"></uc1:articles2>	
+     
 						
 		<asp:Label ID="label1" runat="server"></asp:Label>	
 
@@ -131,48 +127,8 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
  
            <uc1:ad728 ID="ad728" runat="server"></uc1:ad728>
                                         <br /><br />
-
-				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >             </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>												
-															</article>
-								</div>
-
-						</div>
-						<div class="4u">
-						
-							<!-- Sidebar -->
-								<div id="sidebar">
-
-									<section>
-										<h3>Most Popular</h3>
-										<p>
-                                            <uc1:ad300 ID="ad300" runat="server"></uc1:ad300>
-										</p>
-										<!--
-										<footer>
-                                             <asp:hyperlink ID="buttonMore"  runat="server" class="button button-icon button-icon-info" >             </asp:hyperlink>	
 											
-										</footer>
-										-->
-									</section>
-
-									<section>
-										<h3>Related Articles</h3>
-										<ul class="style2">
-                                            <uc1:articles ID="articles" runat="server"></uc1:articles>
-											<!--
-                                            <li>More Articles</li>
-                                            <uc1:articlesd ID="articlesd" runat="server"></uc1:articlesd>
-											-->
-										</ul>
-									</section>
-
-								</div>
-						
-						</div>
-					</div>
-				</div>
-			</div>
+							
 
 
 
