@@ -19,12 +19,11 @@ public partial class Master : System.Web.UI.MasterPage
         /*  topheader.Text = Global.Sitename.ToString();
          topheader.NavigateUrl = Global.Siteurl.ToString(); */
         
-        /*
         if (topheader != null)
         {
             topheader.Text = Page.Title;
         }
-        */
+        
         //  topheader.NavigateUrl = Global.Siteurl.ToString(); 
 
         if (hyperlinkHome != null)

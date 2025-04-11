@@ -1,6 +1,6 @@
 ﻿ 
 
-<%@ Page Language="C#" MasterPageFile="masterpage_blank.Master" AutoEventWireup="true" CodeFile="folder-link-generate-1.aspx.cs" Inherits="Article" CodeFileBaseClass="BasePage" 
+<%@ Page Language="C#" MasterPageFile="~/generate/site5/masterpage_blank.Master" AutoEventWireup="true" CodeFile="folder-names-generate-button.aspx.cs" Inherits="Article" CodeFileBaseClass="BasePage" 
 
 %>
 
@@ -18,12 +18,9 @@
 <ItemTemplate>
 
 
-												
-		<li>								
-		<asp:hyperlink ID="title"  runat="server" Text='<%# Eval("name") %>' NavigateUrl='<%#  Eval("url") %>' >
-            
-            </asp:hyperlink>
-            </li>	
+								
+		<asp:hyperlink ID="buttonall"  runat="server" Text='<%# Eval("name") %>' NavigateUrl='<%#  Eval("url") %>' >           </asp:hyperlink>
+ 
 
 
 </ItemTemplate>

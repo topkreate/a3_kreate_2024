@@ -1,5 +1,5 @@
 ﻿ 
-<%@ Control Language="C#" AutoEventWireup="true" CodeFile="blog.ascx.cs" Inherits="Default" %>
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="blog - Copy (2).ascx.cs" Inherits="Default" %>
 
 				<div class="main-wrapper-style3">
 					<div class="inner">
@@ -9,7 +9,7 @@
 
 									<!-- Article list -->
 									<section class="box-article-list">
-										<h2 class="icon icon-news">Dataknobs Blog</h2>
+										<h2 class="icon icon-news">Dataknobs blog</h2>
 
 										<article class="box-excerpt">
 
@@ -26,22 +26,7 @@
 											</div>
 										</article>
 						
-										<article class="box-excerpt">
-
-											<div>
-												<header>
-													<span class="date">AI Agent for Business Analysis</span>
-													<h3><a href="https://www.dataknobs.com/products/kreate/kreate-structured-data-insights.html">Analyze reports, dashboard and determine To-do</a></h3>
-												</header>
-												<p>
-													
-													DataKnobs has built an AI Agent for structured data analysis that extracts meaningful insights from diverse datasets such as e-commerce metrics, sales/revenue reports, and sports 
-													scorecards. The agent ingests structured data from sources like CSV files, SQL databases, and APIs, automatically detecting schemas and relationships while standardizing formats.
-													Using statistical analysis, anomaly detection, 
-													and AI-driven forecasting, it identifies trends, correlations, and outliers, providing insights such as sales fluctuations, revenue leaks, and performance metrics.
-												</p>
-											</div>
-										</article>
+										
 										<article class="box-excerpt">
 
 											<div>
@@ -76,7 +61,22 @@
 											</div>
 										</article>
 
+										<article class="box-excerpt">
 
+											<div>
+												<header>
+													<span class="date">AI Agent for Business Analysis</span>
+													<h3><a href="https://www.dataknobs.com/products/kreate/kreate-structured-data-insights.html">Analyze reports, dashboard and determine To-do</a></h3>
+												</header>
+												<p>
+													
+													DataKnobs has built an AI Agent for structured data analysis that extracts meaningful insights from diverse datasets such as e-commerce metrics, sales/revenue reports, and sports 
+													scorecards. The agent ingests structured data from sources like CSV files, SQL databases, and APIs, automatically detecting schemas and relationships while standardizing formats.
+													Using statistical analysis, anomaly detection, 
+													and AI-driven forecasting, it identifies trends, correlations, and outliers, providing insights such as sales fluctuations, revenue leaks, and performance metrics.
+												</p>
+											</div>
+										</article>
 										
 
 										<!-- Excerpt -->
@@ -85,7 +85,7 @@
 											<div>
 												<header>
 													<span class="date"> KreateHub</span>
-													<h3><a href="https://www.dataknobs.com/products/kreate/prompt-library-for-genai.html">Create New knowledge with Prompt library</a></h3>
+													<h3><a href="https://www.dataknobs.com/products/kreate/prompt-library-for-genai.html">Create new knowledge with Prompt library</a></h3>
 												</header>
 												<p>
 													At its core, KreateHub is designed to enable creation of new data and the generation of insights from existing datasets. It acts as a bridge between raw data and meaningful outcomes,
@@ -109,9 +109,140 @@
 													</p>
 												</div>
 										</article>
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">What is KREATE and KreatePro</span>
+													<h3><a href="https://kreatepro.dataknobs.com/">Kreate - Bring your Ideas to Life</a></h3>
+												</header>
+												<p>
+													KREATE empowers you to create things - Dataset, Articles, Presentations, Proposals, Web design,  Websites and AI Assistants
+													Kreate is a platform inclide set of tools that ignite your creatviity and revolutionize the way you work. KReatePro is enterprise version.
+												</p>
+											</div>
+										</article>
+
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">What is KONTROLS</span>
+													<h3><a href="https://www.dataknobs.com/products/kontrols/">KONTROLS - apply creatvity with responsbility</a></h3>
+												</header>
+												<p>
+													KONTROLS enable adding guardrails, lineage, audit trails and governance. KOntrols recogizes that different use cases for Gen AI and AI have varying levels of control requirements. Kontrols provide structure to select right controls.
+												</p>
+											</div>
+										</article>
 
 
+										<article class="box-excerpt">
 
+											<div>
+												<header>
+													<span class="date">What is KNOBS</span>
+													<h3><a href="https://www.dataknobs.com/products/knobs/">KNOBS - Experimentation and Diagnostics</a></h3>
+												</header>
+												<p>
+													Well defined tunable paramters for LLM API, LLM fine tuning , Vector DB.  These parameters enable faster experimentation and diagosis for every state of GenAI development - chunking, embedding, upsert into vector DB, retrievel, generation and creating responses for AI Asistant.
+												</p>
+											</div>
+										</article>
+
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">Kreate Articles</span>
+													<h3><a href="https://www.dataknobs.com/products/kreate/">Create Articles and Blogs</a></h3>
+												</header>
+												<p>
+													Create articles for Blogs, Websites, Social Media posts. Write set of articles together such as chapters of book, or complete book by giving list of topics and Kreate will generate all articles.
+												</p>
+											</div>
+										</article>
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">Kreate Slides</span>
+													<h3><a href="https://www.dataknobs.com/products/kreate/presentations/">Create Presentations, Proposals and Pages</a></h3>
+												</header>
+												<p>
+													Design impactful presentation by giving prmpt.  Convert your text and image content into presentations to win customers. Search in your knowledbe base of presentations and create presentations or different industry. Publish these presentation with one click. Generate SEO for public presentations to index and get traffic.
+												</p>
+											</div>
+										</article>
+
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">Kreate Websites</span>
+													<h3><a href="https://www.dataknobs.com/products/kreatewebsites/">Agent to publish your website daily</a></h3>
+												</header>
+												<p>
+													AI powered website generation engine. It empower user to refresh website daily. Kreate Website AI agent does work of reading conent,  website builder, SEO, create light weight images, create meta data, publish website, submit to search engine, generate sitemap  and test websites.
+												</p>
+											</div>
+										</article>
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">Kreate AI Assistants</span>
+													<h3><a href="https://www.dataknobs.com/products/kreate/assistants/">Build AI Assistant in low code/no code</a></h3>
+												</header>
+												<p>
+													Set up AI Assistant that give personized responss to your customers in minutes.  Add RAG to AI assistant with minimal code- implement vector DB, create chunks to get contextual answer from your knowlebase. Build quality dataset with us for fine tuning and training a cusom LLM.
+												</p>
+											</div>
+										</article>
+
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+																<span class="date">Create AI Agent</span>
+																<h3><a href="https://www.dataknobs.com/agent-ai/">Build AI Agents - 5 types</a></h3>
+												</header>
+												<p>
+																AI agent independently chooses the best actions it needs to perform to achieve their goals. AI agents make rational decisions based on their perceptions and data to produce optimal performance and results. Here are features of AI Agent, Types and Design patterns
+												</p>
+											</div>
+										</article>
+
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">Develop data products with KREATE and AB Experiment</span>
+													<h3><a href="https://www.dataknobs.com/blog/products/">Develop data products and check user response thru experiment</a></h3>
+												</header>
+												<p>
+													As per HBR  Data product require validation of both 1. whether algorithm work  2. whether user like it.
+													Builders of data product need to balance between investing in data-building and experimenting.
+													Our product KREATE focus on building dataset and apps , ABExperiment focus on ab testing. Both are designed to meet data product development lifecycle
+												</p>
+											</div>
+										</article>
+
+										<!-- Excerpt -->
+										<article class="box-excerpt">
+
+											<div>
+												<header>
+													<span class="date">Innovate with experiments</span>
+													<h3><a href="https://www.dataknobs.com/orthogonal.html">Experiment faster and cheaper with knobs</a></h3>
+												</header>
+												<p>
+													In complex problems you have to run hundreds of experiments.
+													Plurality of method require in machine learning is extremely high.
+													With Dataknobs approach, you can experiment thru knobs.
+												</p>
+											</div>
+										</article>
 
 											<article class="box-excerpt">
 

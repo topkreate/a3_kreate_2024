@@ -1,0 +1,288 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterpage2023 - Copy.master.cs" Inherits="Master" %>
+
+
+<%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+<%@ Register Src="articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory.ascx" TagName="articlesub" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory.ascx" TagName="articlesdirectory" TagPrefix="uc1" %>
+<%@ Register Src="articles-directory-limited.ascx" TagName="articlesdirectorylimited" TagPrefix="uc1" %>
+<%@ Register Src="articles-sub-directory.ascx" TagName="articlessub" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
+<%@ Register Src="~/appblock_facebook/facebook_root.ascx" TagName="facebook_root" TagPrefix="uc1" %>
+<%@ Register Src="footer.ascx" TagName="footer" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+	<head id="head1" runat="server">
+     <meta charset="utf-8">
+    <title>Generate websites thru AI - KREATE WEBSITES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="https://storage.googleapis.com/kreatewebsites/sites/site103/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsites/sites/site103/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/kreatewebsites/sites/site103/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsites/sites/site103/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="https://storage.googleapis.com/kreatewebsites/sites/site103/css/style.css" rel="stylesheet">
+
+	</head>
+  
+<body>
+<!-- Spinner Start -->
+        <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white">Kreate<span class="text-dark">.</span>Websites</h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <!-- <a href="index.html" class="nav-item nav-link active">Home</a> -->
+                         <asp:HyperLink ID="hyperlinkHome" class="nav-item nav-link active" runat="server" ></asp:HyperLink>
+                        <uc1:articlessub ID="articlessub" runat="server"></uc1:articlessub>
+                        <!--
+                        <a href="domain-set-up.html" class="nav-item nav-link">Domain Set up</a>
+                        <a href="hosting-guideline" class="nav-item nav-link">Hosting Guideline</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">SEO</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="https://www.kreatewebsites.com/on-page-seo.html" class="dropdown-item">On Page</a>
+                                <a href="image-seo.html" class="dropdown-item">Image SEO</a>
+                                <a href="local-seo.html" class="dropdown-item">Local SEO</a>
+                                <a href="page-speed-seo.html" class="dropdown-item">Page Speed SEO</a>
+                                <a href="video-seo.html" class="dropdown-item">Video SEO</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        -->
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight"><asp:label runat="server" ID="topheader"></asp:label></h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <!--
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">404 Error</li>
+                            -->
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="https://storage.googleapis.com/kreatewebsites/sites/site103/img/hero-img.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- 404 Start -->
+    <div class="container-fluid py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    
+                 
+             
+
+                    
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            <br />
+            <br />
+             <uc1:articleshome ID="articleshome" class="btn btn-primary rounded-pill py-3 px-5" runat="server"></uc1:articleshome>
+       
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 404 End -->
+        
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Tips for website development, A/B testing, Online advertisement</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-white-50 footer pt-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <a href="index.html" class="d-inline-block mb-3">
+                    <h1 class="text-white">KREATE Websites<span class="text-primary">.</span> & chatbots</h1>
+                </a>
+                <p class="mb-0">Build your content like a Data Product - Use same data in multiple channels e.g. Website, Apps, Chatbot etc</p>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <h5 class="text-white mb-4">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>Washington, USA</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+1 4253411222</p>
+                <p><i class="fa fa-envelope me-3"></i>info@kreatewebsites.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/kreatewebsites"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/dataknobs/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <h5 class="text-white mb-4">Popular Link</h5>
+                 <uc1:articles ID="articles" runat="server"></uc1:articles>
+                 
+
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <h5 class="text-white mb-4">Our Product</h5>
+                <a class="btn btn-link" href="https://www.kreatewebsites.com">Webdesign and website generation</a>
+                <a class="btn btn-link" href="https://www.kreatewebsites.com/#features">Features</a>
+                <a class="btn btn-link" href="https://www.kreatewebsites.com/#pricing">Pricing</a>
+                <uc1:articlesdirectory ID="articlesdirectory" runat="server"></uc1:articlesdirectory>
+
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="https://www.kreatewebsites.com/">KREATE Websites</a>, All Right Reserved.
+
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        
+                        <a href="https://www.kreatewebsites.com/">Home</a>
+                        <a class="btn btn-link" href="https://setup.kreatewebsites.com/privacypolicy.html">Privacy Policy</a>
+                        <!--
+                        <a href="https://setup.kreatewebsites.com/">Set up steps</a>
+                        <a href="on-page-seo.html">SEO</a>
+                        <a href="page-speed-seo">Page Speed</a>
+                        <a href="domain-name">Domain name</a>
+                        <a href="on-page-seo.html">SEO</a>
+                        <a href="">FAQs</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://storage.googleapis.com/kreatewebsites/sites/site103/lib/wow/wow.min.js"></script>
+<script src="https://storage.googleapis.com/kreatewebsites/sites/site103/lib/easing/easing.min.js"></script>
+<script src="https://storage.googleapis.com/kreatewebsites/sites/site103/lib/waypoints/waypoints.min.js"></script>
+<script src="https://storage.googleapis.com/kreatewebsites/sites/site103/lib/counterup/counterup.min.js"></script>
+<script src="https://storage.googleapis.com/kreatewebsites/sites/site103/lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="https://storage.googleapis.com/kreatewebsites/sites/site103/js/main.js"></script>
+</body>
+ 
+    <!-- Navbar & Hero End -->
+       
+
+</body>
+</html>

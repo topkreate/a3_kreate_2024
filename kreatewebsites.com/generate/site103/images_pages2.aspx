@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="MasterPage-6-1.master" AutoEventWireup="true"  CodeFile="~/images.aspx.cs" Inherits="Photos" 
+<%@ Page Language="C#" MasterPageFile="MasterPage2023.master" AutoEventWireup="true"  CodeFile="~/images.aspx.cs" Inherits="Photos" 
 Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="BasePage"  %>
 
 
@@ -22,12 +22,12 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 							
 										
 
-    <header class="major">
+
                                          
 					  <h2><asp:label runat="server" ID="title"></asp:label></h2>						
 										
 						 <span class="byline"> <asp:Label ID="metadesc" runat="server" ></asp:Label></span>				
-    </header>       
+                        <br />       
      
 
 							<asp:Datalist ID="RepDetails" runat="server"  RepeatColumns="4" RepeatDirection="Horizontal"  >
@@ -38,28 +38,28 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 
 <ItemTemplate>
 
-<div class="12u">
 
-<section>  		
-     
-     <span class="image image-full"              
-<asp:hyperlink ID="imghyperlink" runat="server" NavigateUrl='<%#   Eval("navigateurl2") %>'>
-    
+					
+  <span class="image image-full">     
+      
+
+
+
+
+<asp:hyperlink ID="imghyperlink" runat="server" NavigateUrl='<%#   Eval("navigateurl") %>'>
                                                       <asp:Image ID="Image1" runat="server"   
                 ImageUrl='<%# Eval("thumbnailurl", "{0}") %>' alt='<%#  Eval("alt") %>'
-                                                NavigateUrl='<%#  Eval("navigateurl2")  %>'              />
-      
+                                                NavigateUrl='<%#  Eval("navigateurl")  %>'              />
                                                  </asp:hyperlink>
-    </span>
-                                                <blockquote>  <asp:label ID="hyperlink1" runat="server"  Text='<%# Eval("displayname") %>' NavigateUrl='<%#  Eval("Navigateurl2") %>' /> </blockquote>
+       </span>   
+
+                                                <blockquote>  <asp:Hyperlink ID="hyperlink1" runat="server"  Text='<%# Eval("displayname")  %>'  NavigateUrl='<%#  Eval("Navigateurl") %>' /></blockquote>
 												 
 				
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                							
 		
 
-</section>     
-</div>
+  </div>
 
 </ItemTemplate>
 
@@ -135,7 +135,5 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 												
 
 
-   
 
-    
 </asp:Content>

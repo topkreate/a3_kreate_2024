@@ -1,13 +1,15 @@
-<%@ Page Language="C#" MasterPageFile="MasterPage-6-1.master" AutoEventWireup="true"  CodeFile="~/images.aspx.cs" Inherits="Photos" 
+<%@ Page Language="C#" MasterPageFile="MasterPage2023_nosidebar.master" AutoEventWireup="true" CodeFile="~/images.aspx.cs" Inherits="Photos" 
 Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="BasePage"  %>
 
 
+
+
 <%@ Register Src="~/appblock_facebook/facebook_display.ascx" TagName="facebook" TagPrefix="uc1" %>
-<%@ Register Src="articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
-<%@ Register Src="articles-list2.ascx" TagName="articles2" TagPrefix="uc1" %>
-<%@ Register Src="articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
-<%@ Register Src="articles-directory.ascx" TagName="articlesdir" TagPrefix="uc1" %>
-<%@ Register Src="articles-directory-limited.ascx" TagName="articlesd" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site5/articles-list.ascx" TagName="articles" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site5/articles-list2.ascx" TagName="articles2" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site5/articles-list-home.ascx" TagName="articleshome" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site5/articles-directory.ascx" TagName="articlesdir" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site5/articles-directory-limited.ascx" TagName="articlesd" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad300.ascx" TagName="ad300" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad728.ascx" TagName="ad728" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock/ad160.ascx" TagName="ad160" TagPrefix="uc1" %>
@@ -15,20 +17,26 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 <%@ Register Src="~/appblock_facebook/facebook_comments.ascx" TagName="facebookcomments" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_embedded_posts.ascx" TagName="facebookembeddedposts" TagPrefix="uc1" %>
 <%@ Register Src="~/appblock_facebook/facebook_recommended_feed.ascx" TagName="facebook_recommended_feed" TagPrefix="uc1" %>
+<%@ Register Src="~/generate/site5/articles-sub-directory.ascx" TagName="articlessub" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
-		
-							
-										
 
-    <header class="major">
+							<!-- Content -->
+								<div id="content">
+									<article class="last">
+											
+                                             <h2><asp:label runat="server" ID="title"></asp:label></h2>
+											
+							
+										<asp:label runat="server" ID="metadesc"></asp:label>
+
+
                                          
-					  <h2><asp:label runat="server" ID="title"></asp:label></h2>						
+											
 										
-						 <span class="byline"> <asp:Label ID="metadesc" runat="server" ></asp:Label></span>				
-    </header>       
-     
+										
+                                           
 
 							<asp:Datalist ID="RepDetails" runat="server"  RepeatColumns="4" RepeatDirection="Horizontal"  >
 <HeaderTemplate>
@@ -38,28 +46,22 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
 
 <ItemTemplate>
 
-<div class="12u">
 
-<section>  		
-     
-     <span class="image image-full"              
-<asp:hyperlink ID="imghyperlink" runat="server" NavigateUrl='<%#   Eval("navigateurl2") %>'>
-    
+					
+                   
+<asp:hyperlink ID="imghyperlink" runat="server" NavigateUrl='<%#   Eval("navigateurl") %>'>
                                                       <asp:Image ID="Image1" runat="server"   
-                ImageUrl='<%# Eval("thumbnailurl", "{0}") %>' alt='<%#  Eval("alt") %>'
-                                                NavigateUrl='<%#  Eval("navigateurl2")  %>'              />
-      
+                ImageUrl='<%# Eval("thumbnailurl", "{0}") %>' alt='<%#  Eval("displayname") %>'
+                                                NavigateUrl='<%#  Eval("navigateurl")  %>'              />
                                                  </asp:hyperlink>
-    </span>
-                                                <blockquote>  <asp:label ID="hyperlink1" runat="server"  Text='<%# Eval("displayname") %>' NavigateUrl='<%#  Eval("Navigateurl2") %>' /> </blockquote>
+
+                                                <blockquote>  <asp:Hyperlink ID="hyperlink1" runat="server"  Text='<%# Eval("displayname")  %>'  NavigateUrl='<%#  Eval("Navigateurl") %>' /></blockquote>
 												 
 				
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                							
 		
 
-</section>     
-</div>
+  </div>
 
 </ItemTemplate>
 
@@ -78,8 +80,7 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
                                                            														
                             <br />
                             <br />
-
-                               <asp:Datalist ID="RepComments" runat="server"  RepeatColumns="1" RepeatDirection="Horizontal"  >
+                            <asp:Datalist ID="RepComments" runat="server"  RepeatColumns="1" RepeatDirection="Horizontal"  >
 <HeaderTemplate>
 
 
@@ -128,14 +129,15 @@ Title="Photos - Sale on Thanks Giving and Black Friday"  CodeFileBaseClass="Base
            <uc1:ad728 ID="ad728" runat="server"></uc1:ad728>
                                         <br /><br />
 
-    <!--
 				 <asp:hyperlink ID="buttonmain"  runat="server" class="button" >             </asp:hyperlink>
-                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>	
-    -->
-												
+                                                            <asp:hyperlink ID="buttonall"  runat="server" class="button button-alt" >             </asp:hyperlink>												
+															</article>
+								</div>
+
+		
+					
 
 
-   
 
-    
+
 </asp:Content>

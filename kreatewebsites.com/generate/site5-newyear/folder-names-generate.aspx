@@ -1,6 +1,6 @@
 ﻿
 
- <%@ Page Language="C#" MasterPageFile="masterpage_blank.Master" AutoEventWireup="true" CodeFile="folder-names-generate-1.aspx.cs" Inherits="Article" CodeFileBaseClass="BasePage" 
+ <%@ Page Language="C#" MasterPageFile="~/generate/site5/masterpage_blank.Master" AutoEventWireup="true" CodeFile="folder-names-generate.aspx.cs" Inherits="Article" CodeFileBaseClass="BasePage" 
 
 %>
 

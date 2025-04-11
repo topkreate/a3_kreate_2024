@@ -109,6 +109,20 @@ public static class Global
 
     }
 
+    static int _siteID = 90102;
+    public static int siteID
+    {
+        get
+        {
+            return _siteID;
+        }
+        set
+        {
+            _siteID = value;
+        }
+
+    }
+
     static int _genName = 0;
     public static int genName
     {

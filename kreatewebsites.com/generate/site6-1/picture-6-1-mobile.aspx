@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="MasterPage-6-1.master" AutoEventWireup="true" CodeFile="~/photo.aspx.cs" Inherits="Photo" 
+<%@ Page Language="C#" MasterPageFile="MasterPage-6-1.master" AutoEventWireup="true" CodeFile="~/photo.aspx.cs" Inherits="Photo" Title="Pictures for Site 6"  
  CodeFileBaseClass="BasePage"  %>
 
 
@@ -14,65 +14,35 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 	   
-<div class="inner">
-	<div class="5grid-layout">
-        <div class="row">
-            <div class="12u">
-		        <!-- Article list -->
-		        <section class="box-article-list">	
+    <header class="major">	
 											
-                                             <h2><asp:label runat="server" ID="title"></asp:label></h2>
-																	
-										
-										<span class="byline"> <asp:Label ID="metadesc" runat="server" ></asp:Label></span>
-                                           <br />
+            <h2><asp:label runat="server" ID="title"></asp:label></h2>	
+		    <span class="byline"> <asp:Label ID="metadesc" runat="server" ></asp:Label></span>
+    </header>
 
-                             <span class="image image-full">                    <asp:image ID="imgMainImage" runat="server" ></asp:image> </span>
+    <span class="image image-full">                    <asp:image ID="imgMainImage" runat="server" ></asp:image> 
 
-									<p><asp:Label ID="labeltext" runat="server"></asp:Label></p>
+    </span>
 
-                    </section>
-           </div>
-       </div>
-   </div>
-  </div>
+	<p><asp:Label ID="labeltext" runat="server"></asp:Label></p>
+
+   
 										
                      <!--     <asp:Hyperlink ID="hyperEmail" runat="server"></asp:Hyperlink> -->
 
-                            <uc1:facebook ID="facebook" runat="server"></uc1:facebook>
-                            <br /><br />
-                                        <asp:Datalist ID="RepComments" runat="server"  RepeatColumns="1" RepeatDirection="Horizontal"  >
-<HeaderTemplate>
+    <uc1:facebook ID="facebook" runat="server"></uc1:facebook>
+    <br /><br />
+     <asp:Datalist ID="RepComments" runat="server"  RepeatColumns="1" RepeatDirection="Horizontal"  >
+            <HeaderTemplate>
+            </HeaderTemplate>
 
+            <ItemTemplate>						
+                    <asp:Label ID="label2" runat="server"  ForeColor="Black" Font-Size="Medium" Text='<%# Eval("text")  %>'></asp:Label>
+              </ItemTemplate>
+            <FooterTemplate>
+            </FooterTemplate>
 
-</HeaderTemplate>
-
-<ItemTemplate>
-
-
-					
-                   
-
-												 
-               							
-		
-
-      <asp:Label ID="label2" runat="server"  ForeColor="Black" Font-Size="Medium" Text='<%# Eval("text")  %>'></asp:Label>
-    <br />
-
-
-</ItemTemplate>
-
-
-
-<FooterTemplate>
-
-    
- 
-
-</FooterTemplate>
-
-            </asp:Datalist>    
+     </asp:Datalist>    
 <!--
  <form method="post" action="mailto:someone@example.com">
  Subject: <input type="text" size="10" maxlength="40" name="subject"> 
@@ -83,14 +53,12 @@ Message: <textarea rows="5" cols="20" wrap="physical" name="Message">
  </form>
 -->
 
-
-								<asp:Label ID="label1" runat="server"></asp:Label>	
-
-                <uc1:articles2 ID="articles2" runat="server"></uc1:articles2>	                                           														
+    
+	<asp:Label ID="label1" runat="server"></asp:Label>	
+   
+     <uc1:articles2 ID="articles2" runat="server"></uc1:articles2>	                                           														
        
-
-
-		</asp:Content>
+</asp:Content>
 
 
 
